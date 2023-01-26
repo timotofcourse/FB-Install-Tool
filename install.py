@@ -2,7 +2,6 @@ import time
 import update
 import sys
 import tkinter
-from tkinter import messagebox
 import customtkinter
 import subprocess
 import os
@@ -12,7 +11,20 @@ from PIL import Image
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
 
+# Added Lists for packages managers
 
+scooppackages = []
+chocopackages = []
+wingetpackages = []
+
+# Check for configuration file
+
+configpresent = os.path.exists('windowspackages.json')
+
+if configpresent = True:
+    time.sleep(0)
+else:
+    time.slee(0)
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -494,236 +506,3 @@ if __name__ == "__main__":
 #####################
 #####################
 #####################
-
-# Lists to use later and to be imported on installing.py
-
-scooppackages = []
-chocopackages = []
-wingetpackages = []
-winchecks = []
-
-if os.path.exists('windowspackages.json'):
-    configpresent = True
-else:
-    time.sleep(0)
-
-
-    if __name__ == "__main__":
-
-        # Launch UI
-
-        class Ui(QtWidgets.QMainWindow):
-            def __init__(main):
-                super(Ui, main).__init__()
-                uic.loadUi('installer.ui', main)
-                
-                # Funcition to make the button work as it should
-
-                def installpackages():
-                    
-                    # Add all checkboxes to a list to make it easier to check whitch checkboxes are checked
-                     
-                    winchecks.append(main.brave)
-                    winchecks.append(main.edge)
-                    winchecks.append(main.kmeleon)
-                    winchecks.append(main.chrome)
-                    winchecks.append(main.vivaldi)
-                    winchecks.append(main.opera)
-                    winchecks.append(main.firefox)
-                    winchecks.append(main.librewolf)
-                    winchecks.append(main.palemoon)
-                    winchecks.append(main.waterfox)
-                    winchecks.append(main.midori)
-                    winchecks.append(main.operagx)
-                    winchecks.append(main.retroarch)
-                    winchecks.append(main.amazongames)
-                    winchecks.append(main.ubi)
-                    winchecks.append(main.dolphin)
-                    winchecks.append(main.rpcs3)
-                    winchecks.append(main.epic)
-                    winchecks.append(main.pcsx2)
-                    winchecks.append(main.yuzu)
-                    winchecks.append(main.heroic)
-                    winchecks.append(main.gog)
-                    winchecks.append(main.itch)
-                    winchecks.append(main.minecraft)
-                    winchecks.append(main.steam)
-                    winchecks.append(main.eaapp)
-                    winchecks.append(main.gdlauncher)
-                    winchecks.append(main.curseforge)
-                    winchecks.append(main.battlenet)
-                    winchecks.append(main.citra)
-                    winchecks.append(main.ppsspp)
-                    winchecks.append(main.blitz)
-                    winchecks.append(main.playnite)
-                    winchecks.append(main.zoom)
-                    winchecks.append(main.guilded)
-                    winchecks.append(main.slack)
-                    winchecks.append(main.hexchat)
-                    winchecks.append(main.skype)
-                    winchecks.append(main.discord)
-                    winchecks.append(main.teamspeak)
-                    winchecks.append(main.telegram)
-                    winchecks.append(main.whatsapp)
-                    winchecks.append(main.viber)
-                    winchecks.append(main.teams)
-                    winchecks.append(main.signal)
-                    winchecks.append(main.sejda)
-                    winchecks.append(main.sumatra)
-                    winchecks.append(main.acrobatreader)
-                    winchecks.append(main.wps)
-                    winchecks.append(main.masterpdf)
-                    winchecks.append(main.foxit)
-                    winchecks.append(main.libreoffice)
-                    winchecks.append(main.openoffice)
-                    winchecks.append(main.kingsoft)
-                    winchecks.append(main.softmaker)
-                    winchecks.append(main.onlyoffice)
-                    winchecks.append(main.microsoftoffice)
-                    winchecks.append(main.vcredist)
-                    winchecks.append(main.dotnet7)
-                    winchecks.append(main.java8)
-                    winchecks.append(main.openjdk)
-                    winchecks.append(main.openjdk8)
-                    winchecks.append(main.directx)
-                    winchecks.append(main.authme)
-                    winchecks.append(main.authy)
-                    winchecks.append(main.passwordhub)
-                    winchecks.append(main.toofast)
-                    winchecks.append(main.yubico)
-                    winchecks.append(main.bitwarden)
-                    winchecks.append(main.keepass)
-                    winchecks.append(main.passwordsafe)
-                    winchecks.append(main.dashlane)
-                    winchecks.append(main.panda)
-                    winchecks.append(main.adwcleaner)
-                    winchecks.append(main.clamav)
-                    winchecks.append(main.vlc)
-                    winchecks.append(main.cider)
-                    winchecks.append(main.gom)
-                    winchecks.append(main.filmora)
-                    winchecks.append(main.tidal)
-                    winchecks.append(main.audacium)
-                    winchecks.append(main.mypaint)
-                    winchecks.append(main.audacity)
-                    winchecks.append(main.deezer)
-                    winchecks.append(main.spotify)
-                    winchecks.append(main.itunes)
-                    winchecks.append(main.clementine)
-                    winchecks.append(main.handbrake)
-                    winchecks.append(main.kdenlive)
-                    winchecks.append(main.mpv)
-                    winchecks.append(main.potplayer)
-                    winchecks.append(main.paintdotnet)
-                    winchecks.append(main.krita)
-                    winchecks.append(main.tuxpaint)
-                    winchecks.append(main.gimp)
-                    winchecks.append(main.glimpse)
-                    winchecks.append(main.photogimp)
-                    winchecks.append(main.upscay)
-                    winchecks.append(main.imageglass)
-                    winchecks.append(main.winzip)
-                    winchecks.append(main.flameshot)
-                    winchecks.append(main.notepad)
-                    winchecks.append(main.peazip)
-                    winchecks.append(main.atom)
-                    winchecks.append(main.sharex)
-                    winchecks.append(main.tello)
-                    winchecks.append(main.sevenzip)
-                    winchecks.append(main.sublime)
-                    winchecks.append(main.evernote)
-                    winchecks.append(main.notion)
-                    winchecks.append(main.winrar)
-                    winchecks.append(main.vscode)
-                    winchecks.append(main.imgburn)
-                    winchecks.append(main.powertoys)
-                    winchecks.append(main.sysinternals)
-                    winchecks.append(main.teracopy)
-                    winchecks.append(main.adb)
-
-                    # Check witch checkboxes are checked or not and if no checkbox is checked give user an erros message
-
-                    if winchecks[0:-1].ischecked == False:
-
-                        messagebox.showinfo(title="Nothing Selected", message="You did not selected any box. \n Select what you want to install first.")
-
-
-                    ### Installing process
-                    # Variables 
-                    completescooppackages = 'scoop install ' + scooppackages
-                    completeschocopackages = 'choco install ' + chocopackages
-                    completewingetpackages = 'winget install -e --id ' + wingetpackages[0]
-                    bucketlist = ['extras', 'versions', 'games', 'nonportable', 'java'] # extra buckets for scoop
-
-                    # Install git with scoop
-
-                    gitinstall = subprocess.Popen('scoop install git')
-                    gitinstall.wait()
-
-                    
-                    # For loop to add buckets
-
-                    for i in range:
-                        completebucketlist = 'scoop bucket add ' + bucketlist[0]
-                        bucketlist.pop(0)
-                        time.sleep(3)
-
-                    for i in range:
-                        addbuckets = subprocess.Popen(completebucketlist, shell=True)
-                        addbuckets.wait()
-                        completebucketlist.pop(0)
-                    
-                    # Scoop Packages Instalation
-
-                    installscoop = subprocess.Popen(completescooppackages, shell=True)
-                    installscoop.wait()
-
-                    # Chocolatey Packages Instalation
-
-                    installchoco = subprocess.Popen(completeschocopackages, shell=True)
-                    installchoco.wait()
-
-                    # Winget Packages Instalation
-
-                    for i in range:
-                        installwinget = subprocess.Popen(completewingetpackages, shell=True)
-                        installwinget.wait()
-                        wingetpackages.pop(0)
-
-                
-                # Update function
-
-                def updateapps():
-                    update()
-
-                # About function
-
-                def about():
-                    messagebox.showinfo(title="About", message="Hello, this app is just a front-end to scoop, chocolatey and winget with pre-selected apps. \n Made with QT and Tkinter. \n Authors: \n FilmaBem")
-
-                # Task Manager shortcut function
-
-                def taskmanager():
-                    subprocess.run('taskmgr', shell=False)
-
-                # Systemsettings shotcut function
-
-                def winsettings():
-                    subprocess.run('ms-settings', shell=False)
-
-                # Triggers for functions
-
-                main.actionUpdate_All_Apps.triggered.connect(updateapps)
-                main.actionAbout.triggered.connect(about)
-                main.actionTask_Manager.triggered.connect(taskmanager)
-                main.actionSystem_Settings.triggered.connect(winsettings)
-
-                # Set the right function to the button click
-
-                main.pushButton.clicked.connect(installpackages)
-
-                # Show Window
-
-                main.show()
-                sys.exit(super.exec_())
-
