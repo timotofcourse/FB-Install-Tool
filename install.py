@@ -271,6 +271,34 @@ class App(customtkinter.CTk):
         # create 6th frame
 
         self.s_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
+        
+        # Things in the Security Frame
+        
+        self.sec_check1 = customtkinter.CTkCheckBox(self.home_frame, text="AuthMe")
+        self.sec_check1.grid(row=1, column=0, padx=20, pady=20)
+        self.sec_check2 = customtkinter.CTkCheckBox(self.home_frame, text="Authy")
+        self.sec_check2.grid(row=1, column=1, padx=20, pady=20)
+        self.sec_check3 = customtkinter.CTkCheckBox(self.home_frame, text="Password Hub")
+        self.sec_check3.grid(row=1, column=2, padx=20, pady=20)
+        self.sec_check4 = customtkinter.CTkCheckBox(self.home_frame, text="2fast")
+        self.sec_check4.grid(row=1, column=3, padx=20, pady=20)
+        self.sec_check5 = customtkinter.CTkCheckBox(self.home_frame, text="Yubico Authenticator")
+        self.sec_check5.grid(row=1, column=4, padx=20, pady=20)
+        self.sec_check6 = customtkinter.CTkCheckBox(self.home_frame, text="Bitwarden")
+        self.sec_check6.grid(row=1, column=5, padx=20, pady=20)
+
+        self.sec_check7 = customtkinter.CTkCheckBox(self.home_frame, text="Keepass")
+        self.sec_check7.grid(row=2, column=0, padx=20, pady=20)
+        self.sec_check8 = customtkinter.CTkCheckBox(self.home_frame, text="Password Safe")
+        self.sec_check8.grid(row=2, column=1, padx=20, pady=20)
+        self.sec_check9 = customtkinter.CTkCheckBox(self.home_frame, text="Dashlane")
+        self.sec_check9.grid(row=2, column=2, padx=20, pady=20)
+        self.sec_check10 = customtkinter.CTkCheckBox(self.home_frame, text="Panda Free Antivirus")
+        self.sec_check10.grid(row=2, column=3, padx=20, pady=20)
+        self.sec_check11 = customtkinter.CTkCheckBox(self.home_frame, text="Adw Cleaner")
+        self.sec_check11.grid(row=2, column=4, padx=20, pady=20)
+        self.sec_check12 = customtkinter.CTkCheckBox(self.home_frame, text="CalmAV")
+        self.sec_check12.grid(row=2, column=5, padx=20, pady=20)
 
         # create 7th frame
 
@@ -397,103 +425,6 @@ else:
 
                 def installpackages():
                     
-
-                    # If statments to add packages to the respective lists to be installed later
-
-
-                    # Runtimes
-                        
-                    if main.vcredist.ischecked():
-                        scooppackages.append('vcredist')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.dotnet7.ischecked():
-                        chocopackages.append('dotnet')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.java8.ischecked():
-                        wingetpackages.append('Oracle.JavaRuntimeEnvironment')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.openjdk.ischecked():
-                        scooppackages.append('openjdk')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.openjdk8.ischecked():
-                        scooppackages.append('openjdk8-redhat')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.directx.ischecked():
-                        chocopackages.append('directx')
-                    else:
-                        time.sleep(0)
-
-                    # Security
-
-                    if main.authme.ischecked():
-                        chocopackages.append('authme')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.authy.ischecked():
-                        scooppackages.append('authy')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.passwordhub.ischecked():
-                        chocopackages.append('password-hub')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.toofast.ischecked():
-                        chocopackages.append('2fast')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.yubico.ischecked():
-                        scooppackages.append('yubioath')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.bitwarden.ischecked():
-                        scooppackages.append('bitwarden')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.keepass.ischecked():
-                        scooppackages.append('keepass')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.passwordsafe.ischecked():
-                        chocopackages.append('passwordsafe')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.dashlane.ischecked():
-                        chocopackages.append('dashlane')
-                    else:
-                        time.sleep(0)
-
-                    if main.panda.ischecked():
-                        chocopackages.append('pandafreeantivirus')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.adwcleaner.ischecked():
-                        scooppackages.append('adwcleaner')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.clamav.ischecked():
-                        chocopackages.append('clamav')
-                    else:
-                        time.sleep(0)
 
                     # Media
 
