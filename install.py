@@ -365,8 +365,44 @@ class App(customtkinter.CTk):
         self.eight_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
         
         # Things on Utilities Frame
+        self.utils_check1 = customtkinter.CTkCheckBox(self.home_frame, text="WinZip")
+        self.utils_check1.grid(row=1, column=0, padx=20, pady=20)
+        self.utils_check2 = customtkinter.CTkCheckBox(self.home_frame, text="Flameshot")
+        self.utils_check2.grid(row=1, column=1, padx=20, pady=20)
+        self.utils_check3 = customtkinter.CTkCheckBox(self.home_frame, text="Notepad++")
+        self.utils_check3.grid(row=1, column=2, padx=20, pady=20)
+        self.utils_check4 = customtkinter.CTkCheckBox(self.home_frame, text="PeaZip")
+        self.utils_check4.grid(row=1, column=3, padx=20, pady=20)
+        self.utils_check5 = customtkinter.CTkCheckBox(self.home_frame, text="Atom")
+        self.utils_check5.grid(row=1, column=4, padx=20, pady=20)
+        self.utils_check6 = customtkinter.CTkCheckBox(self.home_frame, text="ShareX")
+        self.utils_check6.grid(row=1, column=5, padx=20, pady=20)
+
+        self.utils_check7 = customtkinter.CTkCheckBox(self.home_frame, text="Trello Desktop")
+        self.utils_check7.grid(row=2, column=0, padx=20, pady=20)
+        self.utils_check8 = customtkinter.CTkCheckBox(self.home_frame, text="7-Zip")
+        self.utils_check8.grid(row=2, column=1, padx=20, pady=20)
+        self.utils_check9 = customtkinter.CTkCheckBox(self.home_frame, text="Sublime Text")
+        self.utils_check9.grid(row=2, column=2, padx=20, pady=20)
+        self.utils_check10 = customtkinter.CTkCheckBox(self.home_frame, text="Evernote")
+        self.utils_check10.grid(row=2, column=3, padx=20, pady=20)
+        self.utils_check11 = customtkinter.CTkCheckBox(self.home_frame, text="Notion")
+        self.utils_check11.grid(row=2, column=4, padx=20, pady=20)
+        self.utils_check12 = customtkinter.CTkCheckBox(self.home_frame, text="Winrar")
+        self.utils_check12.grid(row=2, column=5, padx=20, pady=20)
         
-        
+        self.utils_check13 = customtkinter.CTkCheckBox(self.home_frame, text="VS Code")
+        self.utils_check13.grid(row=3, column=0, padx=20, pady=20)
+        self.utils_check14 = customtkinter.CTkCheckBox(self.home_frame, text="IMGBurn")
+        self.utils_check14.grid(row=3, column=1, padx=20, pady=20)
+        self.utils_check15 = customtkinter.CTkCheckBox(self.home_frame, text="Powertoys")
+        self.utils_check15.grid(row=3, column=2, padx=20, pady=20)
+        self.utils_check16 = customtkinter.CTkCheckBox(self.home_frame, text="Sysinternals Suite")
+        self.utils_check16.grid(row=3, column=3, padx=20, pady=20)
+        self.utils_check17 = customtkinter.CTkCheckBox(self.home_frame, text="Teracopy")
+        self.utils_check17.grid(row=3, column=4, padx=20, pady=20)
+        self.utils_check18 = customtkinter.CTkCheckBox(self.home_frame, text="ADB")
+        self.utils_check18.grid(row=3, column=5, padx=20, pady=20)
         
         # select default frame
 
@@ -484,102 +520,6 @@ else:
                 # Funcition to make the button work as it should
 
                 def installpackages():
-                    
-
-                    # Media
-
-
-                    # Utilities
-
-                    if main.winzip.ischecked():
-                        wingetpackages.append('Corel.WinZip')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.flameshot.ischecked():
-                        scooppackages.append('flameshot')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.notepad.ischecked():
-                        scooppackages.append('notepadplusplus')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.peazip.ischecked():
-                        scooppackages.append('peazip')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.atom.ischecked():
-                        scooppackages.append('atom')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.sharex.ischecked():
-                        scooppackages.append('sharex')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.trello.ischecked():
-                        chocopackages.append('whale')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.sevenzip.ischecked():
-                        scooppackages.append('7zip')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.sublime.ischecked():
-                        scooppackages.append('sublime-text')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.evernote.ischecked():
-                        chocopackages.append('evernote')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.notion.ischecked():
-                        scooppackages.append('notion-enhanced')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.winrar.ischecked():
-                        scooppackages.append('winrar')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.vscode.ischecked():
-                        scooppackages.append('vscode')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.imgburn.ischecked():
-                        scooppackages.append('imgburn')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.powertoys.ischecked():
-                        scooppackages.append('powertoys')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.sysinternals.ischecked():
-                        scooppackages.append('sysinternals')
-                    else:
-                        time.sleep(0)
-                    
-                    if main.teracopy.ischecked():
-                        scooppackages.append('teracopy-np')
-                    else:
-                        time.sleep(0)
-
-                    if main.adb.ischecked():
-                        scooppackages.append('adb')
-                    else:
-                        time.sleep(0)
                     
                     # Add all checkboxes to a list to make it easier to check whitch checkboxes are checked
                      
