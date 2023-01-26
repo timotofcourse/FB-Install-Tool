@@ -21,7 +21,7 @@ wingetpackages = []
 
 configpresent = os.path.exists('windowspackages.json')
 
-if configpresent = True:
+if configpresent == True:
     time.sleep(0)
 else:
     time.slee(0)
