@@ -132,7 +132,7 @@ class App(customtkinter.CTk):
         self.home_frame_button_1 = customtkinter.CTkButton(self.home_frame, text="Install")
         self.home_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
-        # create second frame
+        # create 2nd frame
 
         self.second_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
 
@@ -185,7 +185,7 @@ class App(customtkinter.CTk):
         self.games_check21 = customtkinter.CTkCheckBox(self.second_frame, text="Playnite")
         self.games_check21.grid(row=3, column=6, padx=20, pady=20)
 
-        # create third frame
+        # create 3rd frame
 
         self.third_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
 
@@ -217,11 +217,11 @@ class App(customtkinter.CTk):
         self.msg_check12 = customtkinter.CTkCheckBox(self.third_frame, text="Signal")
         self.msg_check12.grid(row=2, column=5, padx=20, pady=20)
 
-        # create fourth frame
+        # create 4th frame
 
         self.fourth_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
 
-        # Thing in the Office frame
+        # Things in the Office frame
 
         self.office_check1 = customtkinter.CTkCheckBox(self.fourth_frame, text="Sedja PDF")
         self.office_check1.grid(row=1, column=0, padx=20, pady=20)
@@ -249,19 +249,34 @@ class App(customtkinter.CTk):
         self.office_check12 = customtkinter.CTkCheckBox(self.fourth_frame, text="MS Office 365")
         self.office_check12.grid(row=2, column=5, padx=20, pady=20)
 
-        # create f frame
+        # create 5th frame
 
         self.f_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
+        
+        # Things in the Runtime frame
+        
+        self.home_check1 = customtkinter.CTkCheckBox(self.home_frame, text="VCRedist")
+        self.home_check1.grid(row=1, column=0, padx=20, pady=20)
+        self.home_check2 = customtkinter.CTkCheckBox(self.home_frame, text=".Net")
+        self.home_check2.grid(row=1, column=1, padx=20, pady=20)
+        self.home_check3 = customtkinter.CTkCheckBox(self.home_frame, text="Java Runtime Environment")
+        self.home_check3.grid(row=1, column=2, padx=20, pady=20)
+        self.home_check4 = customtkinter.CTkCheckBox(self.home_frame, text="OpenJDK (Latest)")
+        self.home_check4.grid(row=1, column=3, padx=20, pady=20)
+        self.home_check5 = customtkinter.CTkCheckBox(self.home_frame, text="OpenJDK 8")
+        self.home_check5.grid(row=1, column=4, padx=20, pady=20)
+        self.home_check6 = customtkinter.CTkCheckBox(self.home_frame, text="DirectX")
+        self.home_check6.grid(row=1, column=5, padx=20, pady=20)
 
-        # create s frame
+        # create 6th frame
 
         self.s_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
 
-        # create seven frame
+        # create 7th frame
 
         self.seven_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
 
-        # create eight frame
+        # create 8th frame
 
         self.eight_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
         
@@ -348,19 +363,6 @@ class App(customtkinter.CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #####################
