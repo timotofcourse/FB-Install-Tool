@@ -18,10 +18,6 @@ packagemanagerbins = ['scoopinstalldir', 'chocoinstalldir', 'wingetinstalldir']
 installedscoop = os.path.exists(packagemanagers[0])
 installedchoco = os.path.exists(packagemanagers[1])
 installedwinget = os.path.exists(packagemanagers[2])
-linuxpm = ['apt', 'aptitude', 'dkpg', 'dnf', 'zipper', 'pacman', 'portage', 'yay', 'paru', 'yum', 'flatpak', 'snap']
-macpm = ['mas', 'brew']
-macpmbins = ['masdir', 'brewdir']
-
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
