@@ -79,13 +79,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ```
 
-### Install Sudo
-
-```
-choco install sudo
-
-```
-
 ### Install Git
 
 ```
