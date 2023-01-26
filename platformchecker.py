@@ -24,6 +24,7 @@ customtkinter.set_default_color_theme("blue")
 errormsg = customtkinter.CTk()
 errormsg.title("Error")
 errormsg.geometry(600, 200)
+errormsg.resizable(False)
 
 def leave():
     errormsg.destroy()
