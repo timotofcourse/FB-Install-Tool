@@ -1,6 +1,4 @@
-#!/usr/bin/env python
-
-import tkinter
+import tkinter # Needed to use customtkinter
 from tkinter import messagebox
 import customtkinter
 import time
@@ -35,6 +33,7 @@ if __name__ == '__main__':
     upd = customtkinter.CTk()
     upd.title("Updating Packages")
     upd.geometry(600, 200)
+    upd.resizable(False)
     updlabel = customtkinter.CTkLabel(upd, text="Please wait while we update your apps...")
     updlabel.pack()
     progbar = customtkinter.CTkProgressBar(master=upd, mode="indeterminate")
