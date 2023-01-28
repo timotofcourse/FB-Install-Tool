@@ -275,9 +275,9 @@ class App(customtkinter.CTk):
         self.run_check3.grid(row=1, column=2, padx=20, pady=20)
         self.run_check4 = customtkinter.CTkCheckBox(self.f_frame, text="OpenJDK (Latest)")
         self.run_check4.grid(row=1, column=3, padx=20, pady=20)
-        self.run_check5 = customtkinter.CTkCheckBox(self.f_frame text="OpenJDK 8")
+        self.run_check5 = customtkinter.CTkCheckBox(self.f_frame, text="OpenJDK 8")
         self.run_check5.grid(row=1, column=4, padx=20, pady=20)
-        self.run_check6 = customtkinter.CTkCheckBox(self.f_frame text="DirectX")
+        self.run_check6 = customtkinter.CTkCheckBox(self.f_frame, text="DirectX")
         self.run_check6.grid(row=1, column=5, padx=20, pady=20)
 
         # create 6th frame
