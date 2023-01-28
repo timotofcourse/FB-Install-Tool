@@ -267,17 +267,17 @@ class App(customtkinter.CTk):
         
         # Things in the Runtime frame
         
-        self.run_check1 = customtkinter.CTkCheckBox(self.home_frame, text="VCRedist")
+        self.run_check1 = customtkinter.CTkCheckBox(self.f_frame, text="VCRedist")
         self.run_check1.grid(row=1, column=0, padx=20, pady=20)
-        self.run_check2 = customtkinter.CTkCheckBox(self.home_frame, text=".Net")
+        self.run_check2 = customtkinter.CTkCheckBox(self.f_framee, text=".Net")
         self.run_check2.grid(row=1, column=1, padx=20, pady=20)
-        self.run_check3 = customtkinter.CTkCheckBox(self.home_frame, text="Java Runtime Environment")
+        self.run_check3 = customtkinter.CTkCheckBox(self.f_frame, text="Java Runtime Environment")
         self.run_check3.grid(row=1, column=2, padx=20, pady=20)
-        self.run_check4 = customtkinter.CTkCheckBox(self.home_frame, text="OpenJDK (Latest)")
+        self.run_check4 = customtkinter.CTkCheckBox(self.f_frame, text="OpenJDK (Latest)")
         self.run_check4.grid(row=1, column=3, padx=20, pady=20)
-        self.run_check5 = customtkinter.CTkCheckBox(self.home_frame, text="OpenJDK 8")
+        self.run_check5 = customtkinter.CTkCheckBox(self.f_frame text="OpenJDK 8")
         self.run_check5.grid(row=1, column=4, padx=20, pady=20)
-        self.run_check6 = customtkinter.CTkCheckBox(self.home_frame, text="DirectX")
+        self.run_check6 = customtkinter.CTkCheckBox(self.f_frame text="DirectX")
         self.run_check6.grid(row=1, column=5, padx=20, pady=20)
 
         # create 6th frame
@@ -499,10 +499,3 @@ class App(customtkinter.CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-
-
-#####################
-#####################
-#####################
-#####################
-#####################
