@@ -269,7 +269,7 @@ class App(customtkinter.CTk):
         
         self.run_check1 = customtkinter.CTkCheckBox(self.f_frame, text="VCRedist")
         self.run_check1.grid(row=1, column=0, padx=20, pady=20)
-        self.run_check2 = customtkinter.CTkCheckBox(self.f_framee, text=".Net")
+        self.run_check2 = customtkinter.CTkCheckBox(self.f_frame, text=".Net")
         self.run_check2.grid(row=1, column=1, padx=20, pady=20)
         self.run_check3 = customtkinter.CTkCheckBox(self.f_frame, text="Java Runtime Environment")
         self.run_check3.grid(row=1, column=2, padx=20, pady=20)
