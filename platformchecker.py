@@ -56,8 +56,9 @@ if thispc == 'Windows':
         
 else:
     # Error message to avoid the need to create exceptions for other systems
-    java = customtkinter.CTkLabel(master=errormsg, text="This OS is not supported.")
-    java.pack()
+    
+    otheros = customtkinter.CTkLabel(master=errormsg, text="This OS is not supported.")
+    otheros.pack()
     btn = customtkinter.CTkButton(master=errormsg, text="OK", command=leave)
     
 
