@@ -5,8 +5,6 @@ import customtkinter
 import os
 from pyuac import main_requires_admin
 import install
-import sys
-import ctypes
 
 # Basic variables
 
