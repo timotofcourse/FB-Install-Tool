@@ -36,6 +36,10 @@ elif chocolist == True:
 else:
     time.sleep(0)
 
+# Run an update before running the tool. This is usefull because previous imported lists may be outdated because it may have been some time that someone imported ant list or installed something
+
+update()
+
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
