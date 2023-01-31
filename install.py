@@ -165,7 +165,6 @@ class App(customtkinter.CTk):
         self.games_check7 = customtkinter.CTkCheckBox(self.second_frame, text="PCSX2")
         self.games_check7.grid(row=1, column=6, padx=20, pady=20)
 
-
         self.games_check8 = customtkinter.CTkCheckBox(self.second_frame, text="Yuzu")
         self.games_check8.grid(row=2, column=0, padx=20, pady=20)
         self.games_check9 = customtkinter.CTkCheckBox(self.second_frame, text="Heroic Games Launcher")
@@ -180,7 +179,6 @@ class App(customtkinter.CTk):
         self.games_check13.grid(row=2, column=5, padx=20, pady=20)
         self.games_check14 = customtkinter.CTkCheckBox(self.second_frame, text="EA APP")
         self.games_check14.grid(row=2, column=6, padx=20, pady=20)
-
 
         self.games_check15 = customtkinter.CTkCheckBox(self.second_frame, text="GDLauncher")
         self.games_check15.grid(row=3, column=0, padx=20, pady=20)
@@ -370,7 +368,6 @@ class App(customtkinter.CTk):
         self.media_check24 = customtkinter.CTkCheckBox(self.seven_frame, text="ImageGlass")
         self.media_check24.grid(row=4, column=5, padx=20, pady=20)
 
-                   
 
         # create 8th frame
 
