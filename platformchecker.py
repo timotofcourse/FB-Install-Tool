@@ -4,6 +4,8 @@ import customtkinter
 import os
 from pyuac import main_requires_admin
 import install
+import sys
+import ctypes
 
 # Basic variables
 
@@ -38,9 +40,11 @@ if thispc == 'Windows':
 
         # Privilege Elevation on Windows
 
-        @main_requires_admin
-        def main():
+        if ctypes.is_admin():
             install()
+        else:
+            ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+    
 
     else:
 
@@ -57,8 +61,3 @@ else:
     otheros = customtkinter.CTkLabel(master=errormsg, text="This OS is not supported.")
     otheros.pack()
     btn = customtkinter.CTkButton(master=errormsg, text="OK", command=leave)
-    
-
-
-if __name__ == "__main__":
-    main()
