@@ -15,7 +15,7 @@ customtkinter.set_default_color_theme("blue")
 
 wingetlist = os.path.exists('wingetlist.json')
 scooplist = os.path.exists('scooplist.json')
-chocolist = os.path.exists('chocolist.json')
+chocolist = os.path.exists('chocolist.config')
 
 # Winget import list 
 
