@@ -1,6 +1,6 @@
 import time
 import update
-import tkinter
+import tkinter # Needed to use customtkinter
 import customtkinter
 import subprocess
 import os
