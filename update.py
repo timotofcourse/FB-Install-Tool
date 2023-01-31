@@ -13,13 +13,13 @@ customtkinter.set_default_color_theme("blue")
 
 def updatepackages():
     
-    scoopupdating = subprocess.Popen('scoop update "*"', shell=True)
+    scoopupdating = subprocess.Popen('powershell scoop update "*"', shell=True)
     scoopupdating.wait()
 
-    chocoupdating = subprocess.Popen('choco upgrade all', shell=True)
+    chocoupdating = subprocess.Popen('powershell start-process choco upgrade all -verb runas', shell=True)
     chocoupdating.wait()
 
-    wingetupdating = subprocess.Popen('winget upgrade --all', shell=True)
+    wingetupdating = subprocess.Popen('powershell start-process winget upgrade --all -verb runas', shell=True)
     wingetupdating.wait()
 
     time.sleep(5)

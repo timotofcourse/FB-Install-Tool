@@ -40,10 +40,7 @@ if thispc == 'Windows':
 
         # Privilege Elevation on Windows
 
-        if ctypes.is_admin():
-            install()
-        else:
-            ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+        install()
     
 
     else:

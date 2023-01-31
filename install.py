@@ -18,7 +18,7 @@ chocolist = os.path.exists('chocolist.config')
 # Winget import list 
 
 if wingetlist == True:
-    winstall = subprocess.Popen('winget import wingetlist.json')
+    winstall = subprocess.Popen('powershell start-process winget import wingetlist.json -verb runas')
     winstall.wait()
     
 # Scoop import List
@@ -30,7 +30,7 @@ elif scooplist == True:
 #  Chocolatey import list
 
 elif chocolist == True:
-    chocoinstall = subprocess.Popen('choco install chocolist.config')
+    chocoinstall = subprocess.Popen('powershell start-process choco install chocolist.config -verb runas')
     chocoinstall.wait()
 
 else:
