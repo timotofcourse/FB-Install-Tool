@@ -11,20 +11,32 @@ from PIL import Image
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
 
-# Added Lists for packages managers
-
-scooppackages = []
-chocopackages = []
-wingetpackages = []
-
 # Check for configuration file
 
-configpresent = os.path.exists('windowspackages.json')
+wingetlist = os.path.exists('wingetlist.json')
+scooplist = os.path.exists('scooplist.json')
+chocolist = os.path.exists('chocolist.json')
 
-if configpresent == True:
-    time.sleep(0)
+# Winget import list 
+
+if wingetlist == True:
+    winstall = subprocess.Popen('winget import wingetlist.json')
+    winstall.wait()
+    
+# Scoop import List
+
+elif scooplist == True:
+    scinstall = subprocess.Popen('scoop import scooplist.json')    
+    scinstall.wait()
+    
+#  Chocolatey import list
+
+elif chocolist == True:
+    chocoinstall = subprocess.Popen('choco install chocolist.config')
+    chocoinstall.wait()
+
 else:
-    time.slee(0)
+    time.sleep(0)
 
 class App(customtkinter.CTk):
     def __init__(self):

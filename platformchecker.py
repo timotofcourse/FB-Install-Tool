@@ -3,7 +3,6 @@ from tkinter import messagebox
 import customtkinter
 import os
 from pyuac import main_requires_admin
-import time
 import install
 
 # Basic variables
@@ -42,8 +41,6 @@ if thispc == 'Windows':
         @main_requires_admin
         def main():
             install()
-            # The window will disappear as soon as the program exits!
-            time.sleep(3)
 
     else:
 
