@@ -1,11 +1,9 @@
 import time
 import update
-import sys
 import tkinter
 import customtkinter
 import subprocess
 import os
-import json
 from PIL import Image
 
 customtkinter.set_appearance_mode("System")
