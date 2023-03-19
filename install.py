@@ -639,10 +639,42 @@ class App(customtkinter.CTk):
     # Instalation functions for the packages in all frames
     
     def install_browser_packages(self):
-        if self.checkbrave.get() == 1:
+        if self.check_brave_browser.get() == 1:
             print('brave')
-        if self.checkchrome.get() == 1:
+            
+        if self.check_microsoft_edge.get() == 1:
+            print('edge')
+            
+        if self.check_k_meleon.get() == 1:
+            print('k meleon')
+            
+        if self.check_google_chrome.get() == 1:
             print('chrome')
+            
+        if self.check_vivaldi.get() == 1:
+            print('vivaldi')
+            
+        if self.check_opera.get() == 1:
+            print('opera')
+            
+        if self.check_mozilla_firefox.get() == 1:
+            print('firefox')
+            
+        if self.check_libreoffice.get() == 1:
+            print('librewolf')
+            
+        if self.check_pale_moon.get() == 1:
+            print('pale moon')
+            
+        if self.check_waterfox.get() == 1:
+            print('waterfox')
+            
+        if self.check_midori.get() == 1:
+            print('midori')
+            
+        if self.check_opera_gx.get() == 1:
+            print('opera gx')
+        
     
     def install_game_packages():
         pass
