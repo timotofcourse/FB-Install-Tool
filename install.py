@@ -168,7 +168,7 @@ class App(customtkinter.CTk):
         self.check_powertoys = customtkinter.IntVar()
         self.check_sysinternals_suite = customtkinter.IntVar()
         self.check_teracopy = customtkinter.IntVar()
-        self.check_adb = customtkinter()
+        self.check_adb = customtkinter.IntVar()
         
 
         # create navigation frame
@@ -238,30 +238,33 @@ class App(customtkinter.CTk):
         # Thing in the browsers Frame
 
         self.brave_browser = customtkinter.CTkCheckBox(self.browsers_frame, text="Brave", variable=self.check_brave_browser)
-        self.brave_browser.grid(row=1, column=0, padx=20, pady=20)
+        self.brave_browser.grid(row=1, column=1, padx=20, pady=20)
         self.microsoft_edge = customtkinter.CTkCheckBox(self.browsers_frame, text="Microsoft Edge", variable=self.check_microsoft_edge)
-        self.microsoft_edge.grid(row=1, column=1, padx=20, pady=20)
+        self.microsoft_edge.grid(row=1, column=2, padx=20, pady=20)
         self.k_meleon = customtkinter.CTkCheckBox(self.browsers_frame, text="K Meleon", variable=self.check_k_meleon)
-        self.k_meleon.grid(row=1, column=2, padx=20, pady=20)
+        self.k_meleon.grid(row=1, column=3, padx=20, pady=20)
         self.google_chrome = customtkinter.CTkCheckBox(self.browsers_frame, text="Google Chrome", variable=self.check_google_chrome)
-        self.google_chrome.grid(row=1, column=3, padx=20, pady=20)
+        self.google_chrome.grid(row=1, column=4, padx=20, pady=20)
         self.vivaldi = customtkinter.CTkCheckBox(self.browsers_frame, text="Vivaldi", variable=self.check_vivaldi)
-        self.vivaldi.grid(row=1, column=4, padx=20, pady=20)
+        self.vivaldi.grid(row=1, column=5, padx=20, pady=20)
         self.opera = customtkinter.CTkCheckBox(self.browsers_frame, text="Opera", variable=self.check_opera)
-        self.opera.grid(row=1, column=5, padx=20, pady=20)
+        self.opera.grid(row=1, column=6, padx=20, pady=20)
 
         self.mozilla_firefox = customtkinter.CTkCheckBox(self.browsers_frame, text="Mozilla Firefox", variable=self.check_mozilla_firefox)
-        self.mozilla_firefox.grid(row=2, column=0, padx=20, pady=20)
+        self.mozilla_firefox.grid(row=2, column=1, padx=20, pady=20)
         self.librewolf = customtkinter.CTkCheckBox(self.browsers_frame, text="Librewolf", variable=self.check_librewolf)
-        self.librewolf.grid(row=2, column=1, padx=20, pady=20)
+        self.librewolf.grid(row=2, column=2, padx=20, pady=20)
         self.pale_moon = customtkinter.CTkCheckBox(self.browsers_frame, text="Pale Moon", variable=self.check_pale_moon)
-        self.pale_moon.grid(row=2, column=2, padx=20, pady=20)
+        self.pale_moon.grid(row=2, column=3, padx=20, pady=20)
         self.waterfox = customtkinter.CTkCheckBox(self.browsers_frame, text="Waterfox", variable=self.check_waterfox)
-        self.waterfox.grid(row=2, column=3, padx=20, pady=20)
+        self.waterfox.grid(row=2, column=4, padx=20, pady=20)
         self.midori = customtkinter.CTkCheckBox(self.browsers_frame, text="Midori", variable=self.check_midori)
-        self.midori.grid(row=2, column=4, padx=20, pady=20)
+        self.midori.grid(row=2, column=5, padx=20, pady=20)
         self.opera_gx = customtkinter.CTkCheckBox(self.browsers_frame, text="Opera GX", variable=self.check_opera_gx)
-        self.opera_gx.grid(row=2, column=5, padx=20, pady=20)
+        self.opera_gx.grid(row=2, column=6, padx=20, pady=20)
+        
+        self.browsers_spacer = customtkinter.CTkLabel(self.browsers_frame, text="")
+        self.browsers_spacer.grid(row=3, column=5, padx=20, pady=130)
 
         self.install_browsers = customtkinter.CTkButton(self.browsers_frame, text="Install", command=self.install_browser_packages)
         self.install_browsers.grid(row=4, column=5, padx=20, pady=20)
@@ -280,45 +283,51 @@ class App(customtkinter.CTk):
         self.ubisoft_connect.grid(row=1, column=2, padx=20, pady=20)
         self.dolphin = customtkinter.CTkCheckBox(self.games_frame, text="Dolphin Emulator", variable=self.check_dolphin)
         self.dolphin.grid(row=1, column=3, padx=20, pady=20)
+        
         self.rpcs3 = customtkinter.CTkCheckBox(self.games_frame, text="RPCS3", variable=self.check_rpcs3)
-        self.rpcs3.grid(row=1, column=4, padx=20, pady=20)
+        self.rpcs3.grid(row=2, column=0, padx=20, pady=20)
         self.epic_games_launcher = customtkinter.CTkCheckBox(self.games_frame, text="Epic Games Launcher", variable=self.check_epic_games_launcher)
-        self.epic_games_launcher.grid(row=1, column=5, padx=20, pady=20)
+        self.epic_games_launcher.grid(row=2, column=1, padx=20, pady=20)
         self.pcsx2 = customtkinter.CTkCheckBox(self.games_frame, text="PCSX2", variable=self.check_pcsx2)
-        self.pcsx2.grid(row=1, column=6, padx=20, pady=20)
-
+        self.pcsx2.grid(row=2, column=2, padx=20, pady=20)
         self.yuzu = customtkinter.CTkCheckBox(self.games_frame, text="Yuzu", variable=self.check_yuzu)
-        self.yuzu.grid(row=2, column=0, padx=20, pady=20)
+        self.yuzu.grid(row=2, column=3, padx=20, pady=20)
+        
         self.heroic_games_launcher = customtkinter.CTkCheckBox(self.games_frame, text="Heroic Games Launcher", variable=self.check_heroic_games_launcher)
-        self.heroic_games_launcher.grid(row=2, column=1, padx=20, pady=20)
+        self.heroic_games_launcher.grid(row=3, column=0, padx=20, pady=20)
         self.gog_galaxy = customtkinter.CTkCheckBox(self.games_frame, text="GOG Galaxy", variable=self.check_gog_galaxy)
-        self.gog_galaxy.grid(row=2, column=2, padx=20, pady=20)
+        self.gog_galaxy.grid(row=3, column=1, padx=20, pady=20)
         self.itch_io = customtkinter.CTkCheckBox(self.games_frame, text="Itch.IO", variable=self.check_itch_io)
-        self.itch_io.grid(row=2, column=3, padx=20, pady=20)
+        self.itch_io.grid(row=3, column=2, padx=20, pady=20)
         self.minecraft_launcher = customtkinter.CTkCheckBox(self.games_frame, text="Minecraft Launcher", variable=self.check_minecraft_launcher)
-        self.minecraft_launcher.grid(row=2, column=4, padx=20, pady=20)
+        self.minecraft_launcher.grid(row=3, column=3, padx=20, pady=20)
+        
         self.steam = customtkinter.CTkCheckBox(self.games_frame, text="Steam", variable=self.check_steam)
-        self.steam.grid(row=2, column=5, padx=20, pady=20)
+        self.steam.grid(row=4, column=0, padx=20, pady=20)
         self.ea_app = customtkinter.CTkCheckBox(self.games_frame, text="EA APP", variable=self.check_ea_app)
-        self.ea_app.grid(row=2, column=6, padx=20, pady=20)
-
+        self.ea_app.grid(row=4, column=1, padx=20, pady=20)
         self.gdlauncher = customtkinter.CTkCheckBox(self.games_frame, text="GDLauncher", variable=self.check_gdlauncher)
-        self.gdlauncher.grid(row=3, column=0, padx=20, pady=20)
+        self.gdlauncher.grid(row=4, column=2, padx=20, pady=20)
         self.curseforge = customtkinter.CTkCheckBox(self.games_frame, text="CurseForge", variable=self.check_curseforge)
-        self.curseforge.grid(row=3, column=1, padx=20, pady=20)
+        self.curseforge.grid(row=4, column=3, padx=20, pady=20)
+        
         self.battle_net = customtkinter.CTkCheckBox(self.games_frame, text="Battle.net", variable=self.check_battle_net)
-        self.battle_net.grid(row=3, column=2, padx=20, pady=20)
+        self.battle_net.grid(row=5, column=0, padx=20, pady=20)
         self.citra = customtkinter.CTkCheckBox(self.games_frame, text="Citra Emulator", variable=self.check_citra)
-        self.citra.grid(row=3, column=3, padx=20, pady=20)
+        self.citra.grid(row=5, column=1, padx=20, pady=20)
         self.ppsspp = customtkinter.CTkCheckBox(self.games_frame, text="PPSSPP", variable=self.check_ppsspp)
-        self.ppsspp.grid(row=3, column=4, padx=20, pady=20)
+        self.ppsspp.grid(row=5, column=2, padx=20, pady=20)
         self.blitz = customtkinter.CTkCheckBox(self.games_frame, text="Blitz", variable=self.check_blitz)
-        self.blitz.grid(row=3, column=5, padx=20, pady=20)
+        self.blitz.grid(row=5, column=3, padx=20, pady=20)
+        
         self.playnite = customtkinter.CTkCheckBox(self.games_frame, text="Playnite", variable=self.check_playnite)
-        self.playnite.grid(row=3, column=6, padx=20, pady=20)
+        self.playnite.grid(row=6, column=0, padx=20, pady=20)
+        
+        self.games_spacer = customtkinter.CTkLabel(self.games_frame, text="")
+        self.games_spacer.grid(row=7, column=3, padx=20, pady=2)
         
         self.install_games = customtkinter.CTkButton(self.games_frame, text="Install", command=self.install_game_packages)
-        self.install_games.grid(row=4, column=5, padx=20, pady=20)
+        self.install_games.grid(row=8, column=3, padx=63, pady=20)
 
         # create Messaging frame
 
@@ -336,24 +345,28 @@ class App(customtkinter.CTk):
         self.hexchat.grid(row=1, column=3, padx=20, pady=20)
         self.skype = customtkinter.CTkCheckBox(self.messaging_frame, text="Skype", variable=self.check_skype)
         self.skype.grid(row=1, column=4, padx=20, pady=20)
+        
         self.discord = customtkinter.CTkCheckBox(self.messaging_frame, text="Discord", variable=self.check_discord)
-        self.discord.grid(row=1, column=5, padx=20, pady=20)
-
+        self.discord.grid(row=2, column=0, padx=20, pady=20)
         self.teamspeak = customtkinter.CTkCheckBox(self.messaging_frame, text="TeamSpeak 3", variable=self.check_teamspeak)
-        self.teamspeak.grid(row=2, column=0, padx=20, pady=20)
+        self.teamspeak.grid(row=2, column=1, padx=20, pady=20)
         self.telegram = customtkinter.CTkCheckBox(self.messaging_frame, text="Telegram", variable=self.check_telegram)
-        self.telegram.grid(row=2, column=1, padx=20, pady=20)
+        self.telegram.grid(row=2, column=2, padx=20, pady=20)
         self.whatsapp = customtkinter.CTkCheckBox(self.messaging_frame, text="WhatsApp", variable=self.check_whatsapp)
-        self.whatsapp.grid(row=2, column=2, padx=20, pady=20)
+        self.whatsapp.grid(row=2, column=3, padx=20, pady=20)
         self.viber = customtkinter.CTkCheckBox(self.messaging_frame, text="Viber", variable=self.check_viber)
-        self.viber.grid(row=2, column=3, padx=20, pady=20)
+        self.viber.grid(row=2, column=4, padx=20, pady=20)
+        
         self.microsoft_teams = customtkinter.CTkCheckBox(self.messaging_frame, text="Microsoft Teams", variable=self.check_microsoft_teams)
-        self.microsoft_teams.grid(row=2, column=4, padx=20, pady=20)
+        self.microsoft_teams.grid(row=3, column=0, padx=20, pady=20)
         self.signal = customtkinter.CTkCheckBox(self.messaging_frame, text="Signal", variable=self.check_signal)
-        self.signal.grid(row=2, column=5, padx=20, pady=20)
+        self.signal.grid(row=3, column=1, padx=20, pady=20)
+        
+        self.messaging_spacer = customtkinter.CTkLabel(self.messaging_frame, text="")
+        self.messaging_spacer.grid(row=4, column=4, padx=20, pady=98)
         
         self.install_messaging = customtkinter.CTkButton(self.messaging_frame, text="Install", command=self.install_messaging_packages)
-        self.install_messaging.grid(row=4, column=5, padx=20, pady=20)
+        self.install_messaging.grid(row=5, column=4, padx=28, pady=20)
 
         # create office frame
 
@@ -675,6 +688,8 @@ class App(customtkinter.CTk):
         if self.check_opera_gx.get() == 1:
             print('opera gx')
         
+        if self.check_brave_browser.get() == 0 and self.check_microsoft_edge.get() == 0 and self.check_k_meleon.get() == 0 and self.check_google_chrome.get() == 0 and self.check_vivaldi.get() == 0 and self.check_opera.get() == 0 and self.check_mozilla_firefox.get() == 0 and self.check_librewolf.get() == 0 and self.check_pale_moon.get() == 0 and self.check_waterfox.get() == 0 and self.check_midori.get() == 0 and self.check_opera_gx.get() == 0:
+            print('No browser selected')
     
     def install_game_packages():
         pass
