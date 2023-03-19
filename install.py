@@ -18,20 +18,20 @@ chocolist = os.path.exists('chocolist.config')
 # Winget import list 
 
 if wingetlist == True:
-    winstall = subprocess.Popen('powershell start-process winget import wingetlist.json -verb runas')
-    winstall.wait()
+    winstall = os.popen('winget import wingetlist.json')
+    winstall.read()
     
 # Scoop import List
 
 elif scooplist == True:
-    scinstall = subprocess.Popen('scoop import scooplist.json')    
-    scinstall.wait()
+    scinstall = os.popen('scoop import scooplist.json')    
+    scinstall.read()
     
 #  Chocolatey import list
 
 elif chocolist == True:
-    chocoinstall = subprocess.Popen('powershell start-process choco install chocolist.config -verb runas')
-    chocoinstall.wait()
+    chocoinstall = os.popen('powershell start-process choco install chocolist.config -verb runas')
+    chocoinstall.read()
 
 else:
     time.sleep(0)
@@ -56,6 +56,133 @@ class App(customtkinter.CTk):
         # load images with light and dark mode image
 
         self.logo_image = customtkinter.CTkLabel(master=self, text="FB Install Tool")
+        
+        # Variables for the checkboxes
+        
+        self.checkbrave = customtkinter.IntVar()
+        self.checkedge = customtkinter.IntVar()
+        self.checkkmeleon = customtkinter.IntVar()
+        self.checkchrome = customtkinter.IntVar()
+        self.checkvivaldi = customtkinter.IntVar()
+        self.checkopera = customtkinter.IntVar()
+        self.checkfirefox = customtkinter.IntVar()
+        self.checklibrewolf = customtkinter.IntVar()
+        self.checkpalemoon = customtkinter.IntVar()
+        self.checkwaterfox = customtkinter.IntVar()
+        self.checkmidori = customtkinter.IntVar()
+        self.checkoperagx = customtkinter.IntVar()
+        
+        self.checkretroarch = customtkinter.IntVar()
+        self.checkamazongames = customtkinter.IntVar()
+        self.checkubisoft = customtkinter.IntVar()
+        self.checkdolphin = customtkinter.IntVar()
+        self.checkrpcs3 = customtkinter.IntVar()
+        self.checkepicgames = customtkinter.IntVar()
+        self.checkpcsx2 = customtkinter.IntVar()
+        self.checkyuzu = customtkinter.IntVar()
+        self.checkheroic = customtkinter.IntVar()
+        self.checkgog = customtkinter.IntVar()
+        self.checkitchio = customtkinter.IntVar()
+        self.checkminecraft = customtkinter.IntVar()
+        self.checksteam = customtkinter.IntVar()
+        self.checkeaapp = customtkinter.IntVar()
+        self.checkgdlauncher = customtkinter.IntVar()
+        self.checkcurseforge = customtkinter.IntVar()
+        self.checkbattlenet = customtkinter.IntVar()
+        self.checkcitra = customtkinter.IntVar()
+        self.checkppsspp = customtkinter.IntVar()
+        self.checkblitz = customtkinter.IntVar()
+        self.checkplaynite = customtkinter.IntVar()
+        
+        self.checkzoom = customtkinter.IntVar()
+        self.checkguilded = customtkinter.IntVar()
+        self.checkslack = customtkinter.IntVar()
+        self.checkhexchat = customtkinter.IntVar()
+        self.checkskype = customtkinter.IntVar()
+        self.checkdiscord = customtkinter.IntVar()
+        self.checkteamspeak = customtkinter.IntVar()
+        self.checktelegram = customtkinter.IntVar()
+        self.checkwhatsapp = customtkinter.IntVar()
+        self.checkviber = customtkinter.IntVar()
+        self.checkmsteams = customtkinter.IntVar()
+        self.checksignal = customtkinter.IntVar()
+        
+        self.checksedja = customtkinter.IntVar()
+        self.checksumatra = customtkinter.IntVar()
+        self.checkadobereader = customtkinter.IntVar()
+        self.checkwps = customtkinter.IntVar()
+        self.checkmasterpdf = customtkinter.IntVar()
+        self.checkfoxit = customtkinter.IntVar()
+        self.checklibreoffice = customtkinter.IntVar()
+        self.checkopenoffice = customtkinter.IntVar()
+        self.checkkingsoft = customtkinter.IntVar()
+        self.checkfreeoffice = customtkinter.IntVar()
+        self.checkonlyoffice = customtkinter.IntVar()
+        self.checkmsoffice = customtkinter.IntVar()
+        
+        self.checkvcredist = customtkinter.IntVar()
+        self.checkdotnet = customtkinter.IntVar()
+        self.checkjava = customtkinter.IntVar()
+        self.checkopenjdk = customtkinter.IntVar()
+        self.checkopenjdk8 = customtkinter.IntVar()
+        self.checkdirectx = customtkinter.IntVar()
+        
+        self.checkauthme = customtkinter.IntVar()
+        self.checkauthy = customtkinter.IntVar()
+        self.checkpasswordhub = customtkinter.IntVar()
+        self.checktoofast = customtkinter.IntVar()
+        self.checkyubico = customtkinter.IntVar()
+        self.checkbitwarden = customtkinter.IntVar()
+        self.checkkeepass = customtkinter.IntVar()
+        self.checkpaswordsafe = customtkinter.IntVar()
+        self.checkdashlane = customtkinter.IntVar()
+        self.checkpanda = customtkinter.IntVar()
+        self.checkcalmav = customtkinter.IntVar()
+        
+        self.checkvlc = customtkinter.IntVar()
+        self.checkcider = customtkinter.IntVar()
+        self.checkgom = customtkinter.IntVar()
+        self.checkfilmora = customtkinter.IntVar()
+        self.checktidal = customtkinter.IntVar()
+        self.checkaudacium = customtkinter.IntVar()
+        self.checkmypaint = customtkinter.IntVar()
+        self.checkaudacity = customtkinter.IntVar()
+        self.checkdeezer = customtkinter.IntVar()
+        self.checkspotify = customtkinter.IntVar()
+        self.checkitunes = customtkinter.IntVar()
+        self.checkclementine = customtkinter.IntVar()
+        self.checkhandbrake = customtkinter.IntVar()
+        self.checkkdenlive = customtkinter.IntVar()
+        self.checkmpv = customtkinter.IntVar()
+        self.checkpotplayer = customtkinter.IntVar()
+        self.checkpaintdotnet = customtkinter.IntVar()
+        self.checkkrita = customtkinter.IntVar()
+        self.checktuxpaint = customtkinter.IntVar()
+        self.checkgimp = customtkinter.IntVar()
+        self.checkglimpse = customtkinter.IntVar()
+        self.checkphotogimp = customtkinter.IntVar()
+        self.checkupscayl = customtkinter.IntVar()
+        self.checkimageglass = customtkinter.IntVar()
+        
+        self.checkwinzip = customtkinter.IntVar()
+        self.checkflameshot = customtkinter.IntVar()
+        self.checknotepadplus = customtkinter.IntVar()
+        self.checkpeazip = customtkinter.IntVar()
+        self.checkatom = customtkinter.IntVar()
+        self.checksharex = customtkinter.IntVar()
+        self.checktrello = customtkinter.IntVar()
+        self.checksevenzip = customtkinter.IntVar()
+        self.checksublime = customtkinter.IntVar()
+        self.checkevernote = customtkinter.IntVar()
+        self.checknotion = customtkinter.IntVar()
+        self.checkwinrar = customtkinter.IntVar()
+        self.checkvscode = customtkinter.IntVar()
+        self.checkimgburn = customtkinter.IntVar()
+        self.checkpowertoys = customtkinter.IntVar()
+        self.checksysinternals = customtkinter.IntVar()
+        self.checkteracopy = customtkinter.IntVar()
+        self.checkadb = customtkinter()
+        
 
         # create navigation frame
 
@@ -123,13 +250,13 @@ class App(customtkinter.CTk):
 
         # Thing in the browsers Frame
 
-        self.brave = customtkinter.CTkCheckBox(self.browsers_frame, text="Brave")
+        self.brave = customtkinter.CTkCheckBox(self.browsers_frame, text="Brave", variable=self.checkbrave)
         self.brave.grid(row=1, column=0, padx=20, pady=20)
         self.msedge = customtkinter.CTkCheckBox(self.browsers_frame, text="Microsoft Edge")
         self.msedge.grid(row=1, column=1, padx=20, pady=20)
         self.kmeleon = customtkinter.CTkCheckBox(self.browsers_frame, text="K Meleon")
         self.kmeleon.grid(row=1, column=2, padx=20, pady=20)
-        self.chrome = customtkinter.CTkCheckBox(self.browsers_frame, text="Google Chrome")
+        self.chrome = customtkinter.CTkCheckBox(self.browsers_frame, text="Google Chrome", variable=self.checkchrome)
         self.chrome.grid(row=1, column=3, padx=20, pady=20)
         self.vivaldi = customtkinter.CTkCheckBox(self.browsers_frame, text="Vivaldi")
         self.vivaldi.grid(row=1, column=4, padx=20, pady=20)
@@ -149,7 +276,7 @@ class App(customtkinter.CTk):
         self.operagx = customtkinter.CTkCheckBox(self.browsers_frame, text="Opera GX")
         self.operagx.grid(row=2, column=5, padx=20, pady=20)
 
-        self.install_browsers = customtkinter.CTkButton(self.browsers_frame, text="Install")
+        self.install_browsers = customtkinter.CTkButton(self.browsers_frame, text="Install", command=self.install_browser_packages)
         self.install_browsers.grid(row=4, column=5, padx=20, pady=20)
 
         # create games frame
@@ -203,7 +330,7 @@ class App(customtkinter.CTk):
         self.playnite = customtkinter.CTkCheckBox(self.games_frame, text="Playnite")
         self.playnite.grid(row=3, column=6, padx=20, pady=20)
         
-        self.install_games = customtkinter.CTkButton(self.games_frame, text="Install")
+        self.install_games = customtkinter.CTkButton(self.games_frame, text="Install", command=self.install_game_packages)
         self.install_games.grid(row=4, column=5, padx=20, pady=20)
 
         # create Messaging frame
@@ -238,7 +365,7 @@ class App(customtkinter.CTk):
         self.signal = customtkinter.CTkCheckBox(self.messaging_frame, text="Signal")
         self.signal.grid(row=2, column=5, padx=20, pady=20)
         
-        self.install_messaging = customtkinter.CTkButton(self.messaging_frame, text="Install")
+        self.install_messaging = customtkinter.CTkButton(self.messaging_frame, text="Install", command=self.install_messaging_packages)
         self.install_messaging.grid(row=4, column=5, padx=20, pady=20)
 
         # create office frame
@@ -273,7 +400,7 @@ class App(customtkinter.CTk):
         self.msoffice = customtkinter.CTkCheckBox(self.office_frame, text="MS Office 365")
         self.msoffice.grid(row=2, column=5, padx=20, pady=20)
         
-        self.install_office = customtkinter.CTkButton(self.office_frame, text="Install")
+        self.install_office = customtkinter.CTkButton(self.office_frame, text="Install", command=self.install_office_packages)
         self.install_office.grid(row=4, column=5, padx=20, pady=20)
 
         # create runtime frame
@@ -295,7 +422,7 @@ class App(customtkinter.CTk):
         self.directx = customtkinter.CTkCheckBox(self.runtime_frame, text="DirectX")
         self.directx.grid(row=1, column=5, padx=20, pady=20)
         
-        self.install_runtime = customtkinter.CTkButton(self.runtime_frame, text="Install")
+        self.install_runtime = customtkinter.CTkButton(self.runtime_frame, text="Install", command=self.install_runtime_packages)
         self.install_runtime.grid(row=4, column=5, padx=20, pady=20)
 
         # create security frame
@@ -330,7 +457,7 @@ class App(customtkinter.CTk):
         self.calmav = customtkinter.CTkCheckBox(self.security_frame, text="CalmAV")
         self.calmav.grid(row=2, column=5, padx=20, pady=20)
         
-        self.install_security = customtkinter.CTkButton(self.security_frame, text="Install")
+        self.install_security = customtkinter.CTkButton(self.security_frame, text="Install", command=self.install_security_packages)
         self.install_security.grid(row=4, column=5, padx=20, pady=20)
 
         # create media frame
@@ -391,7 +518,7 @@ class App(customtkinter.CTk):
         self.imageglass = customtkinter.CTkCheckBox(self.media_frame, text="ImageGlass")
         self.imageglass.grid(row=4, column=5, padx=20, pady=20)
         
-        self.install_media = customtkinter.CTkButton(self.media_frame, text="Install")
+        self.install_media = customtkinter.CTkButton(self.media_frame, text="Install", command=self.install_media_packages)
         self.install_media.grid(row=4, column=5, padx=20, pady=20)
 
 
@@ -440,7 +567,7 @@ class App(customtkinter.CTk):
         self.adb = customtkinter.CTkCheckBox(self.utils_frame, text="ADB")
         self.adb.grid(row=3, column=5, padx=20, pady=20)
         
-        self.install_utils = customtkinter.CTkButton(self.utils_frame, text="Install")
+        self.install_utils = customtkinter.CTkButton(self.utils_frame, text="Install", command=self.install_media_packages)
         self.install_utils.grid(row=4, column=5, padx=20, pady=20)
         
         # select default frame
@@ -521,6 +648,35 @@ class App(customtkinter.CTk):
 
     def change_appearance_mode_event(self, new_appearance_mode):
         customtkinter.set_appearance_mode(new_appearance_mode)
+        
+    # Instalation functions for the packages in all frames
+    
+    def install_browser_packages(self):
+        if self.checkbrave.get() == 1:
+            print('brave')
+        if self.checkchrome.get() == 1:
+            print('chrome')
+    
+    def install_game_packages():
+        pass
+    
+    def install_messaging_packages():
+        pass
+    
+    def install_office_packages():
+        pass
+    
+    def install_runtime_packages():
+        pass
+    
+    def install_security_packages():
+        pass
+    
+    def install_media_packages():
+        pass
+    
+    def install_util_packages():
+        pass
 
 
 if __name__ == "__main__":
