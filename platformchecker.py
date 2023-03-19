@@ -33,7 +33,7 @@ def checkplatform():
         okbutton = customtkinter.CTkButton(master=errormsg, text="OK", command=leave)
         okbutton.pack()
         
-    if thispc == 'Windows':
+    elif thispc == 'Windows':
 
         # Now check what version of Windows this software is running
 

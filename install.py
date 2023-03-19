@@ -1,44 +1,30 @@
-import time
 import update
 import tkinter # Needed to use customtkinter
 import customtkinter
-import subprocess
 import os
 from PIL import Image
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
 
-# Check for configuration file
+# Check for configuration file and import the apps
 
-wingetlist = os.path.exists('wingetlist.json')
-scooplist = os.path.exists('scooplist.json')
-chocolist = os.path.exists('chocolist.config')
 
-# Winget import list 
-
-if wingetlist == True:
+if os.path.exists('wingetlist.json'):
     winstall = os.popen('winget import wingetlist.json')
     winstall.read()
-    
-# Scoop import List
 
-elif scooplist == True:
+if os.path.exists('scooplist.json'):
     scinstall = os.popen('scoop import scooplist.json')    
     scinstall.read()
-    
-#  Chocolatey import list
 
-elif chocolist == True:
+if os.path.exists('chocolist.config'):
     chocoinstall = os.popen('powershell start-process choco install chocolist.config -verb runas')
     chocoinstall.read()
 
-else:
-    time.sleep(0)
-
 # Run an update before running the tool. This is usefull because previous imported lists may be outdated because it may have been some time that someone imported ant list or installed something
 
-# update()
+# update.updatepackages()
 
 class App(customtkinter.CTk):
     def __init__(self):

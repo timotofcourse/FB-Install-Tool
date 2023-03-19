@@ -27,9 +27,7 @@ def updatepackages():
     time.sleep(2)
 
     messagebox.showinfo(title="Packages Updated", message="All apps updated.")
-
-if __name__ == '__main__':
-
+    
     upd = customtkinter.CTk()
     upd.title("Updating Packages")
     upd.geometry(600, 200)
@@ -42,3 +40,7 @@ if __name__ == '__main__':
     upd.after(200, updatepackages)
     progbar.stop()
     upd.mainloop()
+
+if __name__ == '__main__':
+
+    print('testing')
