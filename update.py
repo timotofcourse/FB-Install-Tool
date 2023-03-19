@@ -2,7 +2,7 @@ import tkinter # Needed to use customtkinter
 from tkinter import messagebox
 import customtkinter
 import time
-import subprocess
+import os
 
 # Update Window
 customtkinter.set_appearance_mode("System")
@@ -13,14 +13,14 @@ customtkinter.set_default_color_theme("blue")
 
 def updatepackages():
     
-    scoopupdating = subprocess.Popen('powershell scoop update "*"', shell=True)
-    scoopupdating.wait()
+    scoopupdating = os.popen('scoop update "*"')
+    scoopupdating.read()
 
-    chocoupdating = subprocess.Popen('powershell start-process choco upgrade all -verb runas', shell=True)
-    chocoupdating.wait()
+    chocoupdating = os.popen('powershell start-process choco upgrade all -verb runas')
+    chocoupdating.read()
 
-    wingetupdating = subprocess.Popen('powershell start-process winget upgrade --all -verb runas', shell=True)
-    wingetupdating.wait()
+    wingetupdating = os.popen('winget upgrade --all')
+    wingetupdating.read()
 
     time.sleep(5)
     upd.destroy()

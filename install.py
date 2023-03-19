@@ -38,7 +38,7 @@ else:
 
 # Run an update before running the tool. This is usefull because previous imported lists may be outdated because it may have been some time that someone imported ant list or installed something
 
-update()
+# update()
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -46,6 +46,7 @@ class App(customtkinter.CTk):
 
         self.title("FB Install Tool")
         self.geometry("950x467")
+        self.resizable(False, False)
 
         # set grid layout 1x2
 
@@ -122,10 +123,6 @@ class App(customtkinter.CTk):
 
         # Thing in the Browsers Frame
 
-
-        self.spacer = customtkinter.CTkLabel(self.home_frame, corner_radius=0, height=40, text=" ", fg_color="transparent", text_color=("gray10", "gray90"), anchor="w")
-        self.spacer.grid(row=0, column=0, padx=10, pady=50,)
-
         self.home_check1 = customtkinter.CTkCheckBox(self.home_frame, text="Brave")
         self.home_check1.grid(row=1, column=0, padx=20, pady=20)
         self.home_check2 = customtkinter.CTkCheckBox(self.home_frame, text="Microsoft Edge")
@@ -151,9 +148,6 @@ class App(customtkinter.CTk):
         self.home_check11.grid(row=2, column=4, padx=20, pady=20)
         self.home_check12 = customtkinter.CTkCheckBox(self.home_frame, text="Opera GX")
         self.home_check12.grid(row=2, column=5, padx=20, pady=20)
-
-        self.spacer2 = customtkinter.CTkLabel(self.home_frame, corner_radius=0, height=40, text=" ", fg_color="transparent", text_color=("gray10", "gray90"), anchor="w")
-        self.spacer2.grid(row=3, column=0, padx=10, pady=50,)
 
         self.home_frame_button_1 = customtkinter.CTkButton(self.home_frame, text="Install")
         self.home_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
@@ -208,6 +202,9 @@ class App(customtkinter.CTk):
         self.games_check20.grid(row=3, column=5, padx=20, pady=20)
         self.games_check21 = customtkinter.CTkCheckBox(self.second_frame, text="Playnite")
         self.games_check21.grid(row=3, column=6, padx=20, pady=20)
+        
+        self.games_frame_button_1 = customtkinter.CTkButton(self.second_frame, text="Install")
+        self.games_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
         # create 3rd frame
 
@@ -240,6 +237,9 @@ class App(customtkinter.CTk):
         self.msg_check11.grid(row=2, column=4, padx=20, pady=20)
         self.msg_check12 = customtkinter.CTkCheckBox(self.third_frame, text="Signal")
         self.msg_check12.grid(row=2, column=5, padx=20, pady=20)
+        
+        self.coms_frame_button_1 = customtkinter.CTkButton(self.third_frame, text="Install")
+        self.coms_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
         # create 4th frame
 
@@ -272,6 +272,9 @@ class App(customtkinter.CTk):
         self.office_check11.grid(row=2, column=4, padx=20, pady=20)
         self.office_check12 = customtkinter.CTkCheckBox(self.fourth_frame, text="MS Office 365")
         self.office_check12.grid(row=2, column=5, padx=20, pady=20)
+        
+        self.office_frame_button_1 = customtkinter.CTkButton(self.fourth_frame, text="Install")
+        self.office_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
         # create 5th frame
 
@@ -291,6 +294,9 @@ class App(customtkinter.CTk):
         self.run_check5.grid(row=1, column=4, padx=20, pady=20)
         self.run_check6 = customtkinter.CTkCheckBox(self.f_frame, text="DirectX")
         self.run_check6.grid(row=1, column=5, padx=20, pady=20)
+        
+        self.run_frame_button_1 = customtkinter.CTkButton(self.f_frame, text="Install")
+        self.run_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
         # create 6th frame
 
@@ -323,6 +329,9 @@ class App(customtkinter.CTk):
         self.sec_check11.grid(row=2, column=4, padx=20, pady=20)
         self.sec_check12 = customtkinter.CTkCheckBox(self.s_frame, text="CalmAV")
         self.sec_check12.grid(row=2, column=5, padx=20, pady=20)
+        
+        self.security_frame_button_1 = customtkinter.CTkButton(self.s_frame, text="Install")
+        self.security_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
         # create 7th frame
 
@@ -381,6 +390,9 @@ class App(customtkinter.CTk):
         self.media_check23.grid(row=4, column=4, padx=20, pady=20)
         self.media_check24 = customtkinter.CTkCheckBox(self.seven_frame, text="ImageGlass")
         self.media_check24.grid(row=4, column=5, padx=20, pady=20)
+        
+        self.media_frame_button_1 = customtkinter.CTkButton(self.seven_frame, text="Install")
+        self.media_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
 
 
         # create 8th frame
@@ -388,6 +400,7 @@ class App(customtkinter.CTk):
         self.eight_frame = customtkinter.CTkFrame(self, corner_radius=0, fg_color="transparent")
         
         # Things on Utilities Frame
+        
         self.utils_check1 = customtkinter.CTkCheckBox(self.eight_frame, text="WinZip")
         self.utils_check1.grid(row=1, column=0, padx=20, pady=20)
         self.utils_check2 = customtkinter.CTkCheckBox(self.eight_frame, text="Flameshot")
@@ -426,6 +439,9 @@ class App(customtkinter.CTk):
         self.utils_check17.grid(row=3, column=4, padx=20, pady=20)
         self.utils_check18 = customtkinter.CTkCheckBox(self.eight_frame, text="ADB")
         self.utils_check18.grid(row=3, column=5, padx=20, pady=20)
+        
+        self.utils_frame_button_1 = customtkinter.CTkButton(self.eight_frame, text="Install")
+        self.utils_frame_button_1.grid(row=4, column=5, padx=20, pady=20)
         
         # select default frame
 
