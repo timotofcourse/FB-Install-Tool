@@ -710,25 +710,26 @@ class App(customtkinter.CTk):
         if self.check_brave_browser.get() == 0 and self.check_microsoft_edge.get() == 0 and self.check_k_meleon.get() == 0 and self.check_google_chrome.get() == 0 and self.check_vivaldi.get() == 0 and self.check_opera.get() == 0 and self.check_mozilla_firefox.get() == 0 and self.check_librewolf.get() == 0 and self.check_pale_moon.get() == 0 and self.check_waterfox.get() == 0 and self.check_midori.get() == 0 and self.check_opera_gx.get() == 0:
             print('No browser selected')
     
-    def install_game_packages():
+    def install_game_packages(self):
+        if self.check_retroarch.get() ==1:
+            print('Retroarch')
+    
+    def install_messaging_packages(self):
         pass
     
-    def install_messaging_packages():
+    def install_office_packages(self):
         pass
     
-    def install_office_packages():
+    def install_runtime_packages(self):
         pass
     
-    def install_runtime_packages():
+    def install_security_packages(self):
         pass
     
-    def install_security_packages():
+    def install_media_packages(self):
         pass
     
-    def install_media_packages():
-        pass
-    
-    def install_util_packages():
+    def install_util_packages(self):
         pass
 
 
