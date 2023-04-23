@@ -169,6 +169,8 @@ class App(customtkinter.CTk):
         self.check_sysinternals_suite = customtkinter.IntVar()
         self.check_teracopy = customtkinter.IntVar()
         self.check_adb = customtkinter.IntVar()
+        self.check_flow = customtkinter.IntVar()
+        self.check_adguard = customtkinter.IntVar()
         
 
         # create navigation frame
@@ -577,6 +579,10 @@ class App(customtkinter.CTk):
         self.teracopy.grid(row=3, column=4, padx=20, pady=20)
         self.adb = customtkinter.CTkCheckBox(self.utils_frame, text="ADB", variable=self.check_adb)
         self.adb.grid(row=3, column=5, padx=20, pady=20)
+        self.flow = customtkinter.CTkCheckBox(self.utils_frame, text="Flow Launcher", variable=self.check_flow)
+        self.flow.grid(row=4, column=0, padx=20, pady=20)
+        self.adguard = customtkinter.CTkCheckBox(self.utils_frame, text="Adguard", variable=self.check_adguard)
+        self.adguard.grid(row=4, column=1, padx=20, pady=20)
         
         self.install_utils = customtkinter.CTkButton(self.utils_frame, text="Install", command=self.install_media_packages)
         self.install_utils.grid(row=4, column=5, padx=20, pady=20)
