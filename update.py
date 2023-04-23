@@ -21,23 +21,23 @@ def updatepackages():
     
     
     time.sleep(5)
-    upd.destroy()
+    updatewindow.destroy()
     time.sleep(2)
 
     messagebox.showinfo(title="Packages Updated", message="All apps updated.")
     
-    upd = customtkinter.CTk()
-    upd.title("Updating Packages")
-    upd.geometry(600, 200)
-    upd.resizable(False)
-    updlabel = customtkinter.CTkLabel(upd, text="Please wait while we update your apps...")
-    updlabel.pack()
-    progbar = customtkinter.CTkProgressBar(master=upd, mode="indeterminate")
-    progbar.pack()
-    progbar.start()
-    upd.after(200, updatepackages)
-    progbar.stop()
-    upd.mainloop()
+    updatewindow = customtkinter.CTk()
+    updatewindow.title("Updating Packages")
+    updatewindow.geometry(600, 200)
+    updatewindow.resizable(False)
+    updatelabel = customtkinter.CTkLabel(updatewindow, text="Please wait while we update your apps...")
+    updatelabel.pack()
+    progressbar = customtkinter.CTkProgressBar(master=updatewindow, mode="indeterminate")
+    progressbar.pack()
+    progressbar.start()
+    updatewindow.after(200, updatepackages)
+    progressbar.stop()
+    updatewindow.mainloop()
 
 if __name__ == '__main__':
 
