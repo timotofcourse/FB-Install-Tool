@@ -420,6 +420,7 @@ class App(customtkinter.CTk):
         self.java.grid(row=1, column=2, padx=20, pady=20)
         self.openjdk = customtkinter.CTkCheckBox(self.runtime_frame, text="OpenJDK (Latest)", variable=self.check_openjdk)
         self.openjdk.grid(row=1, column=3, padx=20, pady=20)
+        
         self.openjdk8 = customtkinter.CTkCheckBox(self.runtime_frame, text="OpenJDK 8", variable=self.check_openjdk8)
         self.openjdk8.grid(row=2, column=0, padx=20, pady=20)
         self.directx = customtkinter.CTkCheckBox(self.runtime_frame, text="DirectX", variable=self.check_directx)
@@ -445,26 +446,30 @@ class App(customtkinter.CTk):
         self.passwordhub.grid(row=1, column=2, padx=20, pady=20)
         self.toofast = customtkinter.CTkCheckBox(self.security_frame, text="2fast", variable=self.check_toofast)
         self.toofast.grid(row=1, column=3, padx=20, pady=20)
+        
         self.yubico = customtkinter.CTkCheckBox(self.security_frame, text="Yubico Authenticator", variable=self.check_yubico)
-        self.yubico.grid(row=1, column=4, padx=20, pady=20)
+        self.yubico.grid(row=2, column=0, padx=20, pady=20)
         self.bitwarden = customtkinter.CTkCheckBox(self.security_frame, text="Bitwarden", variable=self.check_bitwarden)
-        self.bitwarden.grid(row=1, column=5, padx=20, pady=20)
-
+        self.bitwarden.grid(row=2, column=1, padx=20, pady=20)
         self.keepass = customtkinter.CTkCheckBox(self.security_frame, text="Keepass", variable=self.check_keepass)
-        self.keepass.grid(row=2, column=0, padx=20, pady=20)
+        self.keepass.grid(row=2, column=2, padx=20, pady=20)
         self.passwordsafe = customtkinter.CTkCheckBox(self.security_frame, text="Password Safe", variable=self.check_paswordsafe)
-        self.passwordsafe.grid(row=2, column=1, padx=20, pady=20)
+        self.passwordsafe.grid(row=2, column=3, padx=20, pady=20)
+        
         self.dashlane = customtkinter.CTkCheckBox(self.security_frame, text="Dashlane", variable=self.check_dashlane)
-        self.dashlane.grid(row=2, column=2, padx=20, pady=20)
+        self.dashlane.grid(row=3, column=0, padx=20, pady=20)
         self.panda = customtkinter.CTkCheckBox(self.security_frame, text="Panda Free Antivirus", variable=self.check_panda)
-        self.panda.grid(row=2, column=3, padx=20, pady=20)
+        self.panda.grid(row=3, column=1, padx=20, pady=20)
         self.adw_cleaner = customtkinter.CTkCheckBox(self.security_frame, text="Adw Cleaner", variable=self.check_adw_cleaner)
-        self.adw_cleaner.grid(row=2, column=4, padx=20, pady=20)
+        self.adw_cleaner.grid(row=3, column=2, padx=20, pady=20)
         self.calmav = customtkinter.CTkCheckBox(self.security_frame, text="CalmAV", variable=self.check_calmav)
-        self.calmav.grid(row=2, column=5, padx=20, pady=20)
+        self.calmav.grid(row=3, column=3, padx=20, pady=20)
+        
+        self.security_spacer = customtkinter.CTkLabel(self.security_frame, text="")
+        self.security_spacer.grid(row=4, column=3, padx=20, pady=98)
         
         self.install_security = customtkinter.CTkButton(self.security_frame, text="Install", command=self.install_security_packages)
-        self.install_security.grid(row=4, column=5, padx=20, pady=20)
+        self.install_security.grid(row=5, column=3, padx=98, pady=20)
 
         # create media frame
 
