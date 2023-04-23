@@ -32,7 +32,7 @@ class App(customtkinter.CTk):
 
         self.title("FB Install Tool")
         self.geometry("950x467")
-        self.resizable(False, False)
+        self.resizable(True, True)
 
         # set grid layout 1x2
 
@@ -385,23 +385,26 @@ class App(customtkinter.CTk):
         self.master_pdf = customtkinter.CTkCheckBox(self.office_frame, text="Master PDF Editor", variable=self.check_masterpdf)
         self.master_pdf.grid(row=1, column=4, padx=20, pady=20)
         self.foxit = customtkinter.CTkCheckBox(self.office_frame, text="Foxit Reader", variable=self.check_foxit_reader)
-        self.foxit.grid(row=1, column=5, padx=20, pady=20)
+        self.foxit.grid(row=2, column=0, padx=20, pady=20)
 
         self.libreoffice = customtkinter.CTkCheckBox(self.office_frame, text="LibreOffice", variable=self.check_libreoffice)
-        self.libreoffice.grid(row=2, column=0, padx=20, pady=20)
+        self.libreoffice.grid(row=2, column=1, padx=20, pady=20)
         self.openoffice = customtkinter.CTkCheckBox(self.office_frame, text="OpenOffice", variable=self.check_openoffice)
-        self.openoffice.grid(row=2, column=1, padx=20, pady=20)
+        self.openoffice.grid(row=2, column=2, padx=20, pady=20)
         self.kingsoft_office = customtkinter.CTkCheckBox(self.office_frame, text="Kingsoft Office", variable=self.check_kingsoft_office)
-        self.kingsoft_office.grid(row=2, column=2, padx=20, pady=20)
+        self.kingsoft_office.grid(row=2, column=3, padx=20, pady=20)
         self.freeoffice = customtkinter.CTkCheckBox(self.office_frame, text="FreeOffice", variable=self.check_freeoffice)
-        self.freeoffice.grid(row=2, column=3, padx=20, pady=20)
+        self.freeoffice.grid(row=2, column=4, padx=20, pady=20)
         self.onlyoffice = customtkinter.CTkCheckBox(self.office_frame, text="OnlyOffice", variable=self.check_onlyoffice)
-        self.onlyoffice.grid(row=2, column=4, padx=20, pady=20)
+        self.onlyoffice.grid(row=3, column=0, padx=20, pady=20)
         self.microsoft_office = customtkinter.CTkCheckBox(self.office_frame, text="MS Office 365", variable=self.check_microsoft_office)
-        self.microsoft_office.grid(row=2, column=5, padx=20, pady=20)
+        self.microsoft_office.grid(row=3, column=1, padx=20, pady=20)
+        
+        self.office_spacer = customtkinter.CTkLabel(self.office_frame, text="")
+        self.office_spacer.grid(row=4, column=4, padx=20, pady=244)
         
         self.install_office = customtkinter.CTkButton(self.office_frame, text="Install", command=self.install_office_packages)
-        self.install_office.grid(row=4, column=5, padx=20, pady=20)
+        self.install_office.grid(row=4, column=4, padx=27, pady=30)
 
         # create runtime frame
 
