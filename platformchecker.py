@@ -1,6 +1,5 @@
 import platform
 import tkinter # Needed to use customtkinter
-from tkinter import messagebox
 import customtkinter
 import os
 
