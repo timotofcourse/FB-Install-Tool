@@ -778,7 +778,44 @@ class App(customtkinter.CTk):
             print('No game related software selected')
     
     def install_messaging_packages(self):
-        pass
+        if self.check_zoom.get() == 1:
+            print('Zoom')
+            
+        if self.check_guilded.get() == 1:
+            print('Guilded')
+            
+        if self.check_slack.get() == 1:
+            print('Slack')
+            
+        if self.check_hexchat.get() == 1:
+            print('HexChat')
+            
+        if self.check_skype.get() == 1:
+            print('Skype')
+            
+        if self.check_discord.get() == 1:
+            print('Discord')
+            
+        if self.check_teamspeak.get() == 1:
+            print('TeamSpeak 3')
+            
+        if self.check_telegram.get() == 1:
+            print('Telegram Desktop')
+            
+        if self.check_whatsapp.get() == 1:
+            print('WhatsApp Desktop')
+            
+        if self.check_viber.get() == 1:
+            print('Viber Desktop')
+            
+        if self.check_microsoft_teams.get() == 1:
+            print('Microsoft Teams')
+            
+        if self.check_signal.get() == 1:
+            print('Signal Desktop')
+            
+        if self.check_zoom.get() == 0 and self.check_guilded.get() == 0 and self.check_slack.get() == 0 and self.check_hexchat.get() == 0 and self.check_skype.get() == 0 and self.check_discord.get() == 0 and self.check_teamspeak.get() == 0 and self.check_telegram.get() == 0 and self.check_whatsapp.get() == 0 and self.check_viber.get() == 0 and self.check_microsoft_teams.get() == 0 and self.check_signal.get() == 0:
+            print('No messaging software selected')
     
     def install_office_packages(self):
         pass
