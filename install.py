@@ -414,19 +414,22 @@ class App(customtkinter.CTk):
         
         self.vcredist = customtkinter.CTkCheckBox(self.runtime_frame, text="VCRedist", variable=self.check_vcredist)
         self.vcredist.grid(row=1, column=0, padx=20, pady=20)
-        self.dotnet = customtkinter.CTkCheckBox(self.runtime_frame, text=".Net", variable=self.check_dotnet)
+        self.dotnet = customtkinter.CTkCheckBox(self.runtime_frame, text="DotNet", variable=self.check_dotnet)
         self.dotnet.grid(row=1, column=1, padx=20, pady=20)
         self.java = customtkinter.CTkCheckBox(self.runtime_frame, text="Java Runtime Environment", variable=self.check_java)
         self.java.grid(row=1, column=2, padx=20, pady=20)
         self.openjdk = customtkinter.CTkCheckBox(self.runtime_frame, text="OpenJDK (Latest)", variable=self.check_openjdk)
         self.openjdk.grid(row=1, column=3, padx=20, pady=20)
         self.openjdk8 = customtkinter.CTkCheckBox(self.runtime_frame, text="OpenJDK 8", variable=self.check_openjdk8)
-        self.openjdk8.grid(row=1, column=4, padx=20, pady=20)
+        self.openjdk8.grid(row=2, column=0, padx=20, pady=20)
         self.directx = customtkinter.CTkCheckBox(self.runtime_frame, text="DirectX", variable=self.check_directx)
-        self.directx.grid(row=1, column=5, padx=20, pady=20)
+        self.directx.grid(row=2, column=1, padx=20, pady=20)
+        
+        self.runtime_spacer = customtkinter.CTkLabel(self.runtime_frame, text="")
+        self.runtime_spacer.grid(row=3, column=3, padx=20, pady=130)
         
         self.install_runtime = customtkinter.CTkButton(self.runtime_frame, text="Install", command=self.install_runtime_packages)
-        self.install_runtime.grid(row=4, column=5, padx=20, pady=20)
+        self.install_runtime.grid(row=4, column=3, padx=125, pady=20)
 
         # create security frame
 
