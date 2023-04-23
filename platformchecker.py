@@ -13,13 +13,13 @@ userfolder = str(os.path.home())
 packagemanagers = ['scoop', 'chocolatey', 'winget']
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
-errormsg = customtkinter.CTk()
-errormsg.title("Error")
-errormsg.geometry(600, 200)
-errormsg.resizable(False, False)
+errormessage = customtkinter.CTk()
+errormessage.title("Error")
+errormessage.geometry(600, 200)
+errormessage.resizable(False, False)
 
 def leave():
-    errormsg.destroy()
+    errormessage.destroy()
 
 # Check where this software is running
 
@@ -27,9 +27,9 @@ def checkplatform():
     
     if thispc != 'Windows':
 
-        otheros = customtkinter.CTkLabel(master=errormsg, text="This OS is not supported.")
+        otheros = customtkinter.CTkLabel(master=errormessage, text="This OS is not supported.")
         otheros.pack()
-        okbutton = customtkinter.CTkButton(master=errormsg, text="OK", command=leave)
+        okbutton = customtkinter.CTkButton(master=errormessage, text="OK", command=leave)
         okbutton.pack()
         
     elif thispc == 'Windows':
@@ -41,9 +41,9 @@ def checkplatform():
             # Old Windows versions
         
             msg = 'It seems like your windows version is too old, ' + username + ', Update your Windows First.'
-            oldwin = customtkinter.CTkLabel(master=errormsg, text=msg)
+            oldwin = customtkinter.CTkLabel(master=errormessage, text=msg)
             oldwin.pack()
-            okbutton = customtkinter.CTkButton(master=errormsg, text="OK", command=leave)
+            okbutton = customtkinter.CTkButton(master=errormessage, text="OK", command=leave)
             okbutton.pack()
         
 
