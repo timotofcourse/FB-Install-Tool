@@ -711,8 +711,71 @@ class App(customtkinter.CTk):
             print('No browser selected')
     
     def install_game_packages(self):
-        if self.check_retroarch.get() ==1:
+        if self.check_retroarch.get() == 1:
             print('Retroarch')
+        
+        if self.check_amazon_games.get() == 1:
+            print('Amazon Games')
+            
+        if self.check_ubisoft_connect.get() == 1:
+            print('Ubisoft Connect')
+            
+        if self.check_dolphin.get() == 1:
+            print('Dolphin Emulator')
+            
+        if self.check_rpcs3.get() == 1:
+            print('RPCS3 Emulator')
+            
+        if self.check_epic_games_launcher.get() == 1:
+            print('Epic Games Launcher')
+            
+        if self.check_pcsx2.get() == 1:
+            print('PCSX2 Emulator')
+            
+        if self.check_yuzu.get() == 1:
+            print('Yuzu Emulator')
+            
+        if self.check_heroic_games_launcher.get() == 1:
+            print('Heroic Games Launcher')
+            
+        if self.check_gog_galaxy.get() == 1:
+            print('GOG Galaxy')
+            
+        if self.check_itch_io.get() == 1:
+            print('Itch.IO')
+            
+        if self.check_minecraft_launcher.get() == 1:
+            print('Minecraft Launcher')
+            
+        if self.check_steam.get() == 1:
+            print('Steam')
+            
+        if self.check_ea_app.get() == 1:
+            print('EA App')
+            
+        if self.check_gdlauncher.get() == 1:
+            print('GDLauncher')
+            
+        if self.check_curseforge.get() == 1:
+            print('CurseForge')
+            
+        if self.check_battle_net.get() == 1:
+            print('Battle.net')
+            
+        if self.check_citra.get() == 1:
+            print('Citra Emulator')
+            
+        if self.check_ppsspp.get() == 1:
+            print('PPSSPP Emulator')
+            
+        if self.check_blitz.get() == 1:
+            print('Blitz')
+            
+        if self.check_playnite.get() == 1:
+            print('Playnite')
+            
+        if self.check_retroarch.get() == 0 and self.check_amazon_games.get() == 0 and self.check_ubisoft_connect.get() == 0 and self.check_dolphin.get() == 0 and self.check_rpcs3.get() == 0 and self.check_epic_games_launcher.get() == 0 and self.check_pcsx2.get() == 0 and self.check_yuzu.get() == 0 and self.check_heroic_games_launcher.get() == 0 and self.check_gog_galaxy.get() == 0 and self.check_itch_io.get() == 0 and self.check_minecraft_launcher.get() == 0 and self.check_steam.get() == 0 and self.check_ea_app.get() == 0 and self.check_gdlauncher.get() == 0 and self.check_curseforge.get() == 0 and self.check_battle_net.get() == 0 and self.check_citra.get() == 0 and self.check_ppsspp.get() == 0 and self.check_blitz.get() == 0 and self.check_playnite.get() == 0:
+            print('No game related software selected')
     
     def install_messaging_packages(self):
         pass
