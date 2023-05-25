@@ -893,7 +893,57 @@ class App(customtkinter.CTk):
             print('No security software selected')
     
     def install_media_packages(self):
-        pass
+        if self.check_vlc.get() == 1:
+            print('vlc')
+        if self.check_cider.get() == 1:
+            print('cider')
+        if self.check_gom_player.get() == 1:
+            print('Gom Player')
+        if self.check_wondershare_filmora.get() == 1:
+            print('Wondershare Filmora')
+        if self.check_tidal.get() == 1:
+            print('tidal')
+        if self.check_audacium.get() == 1:
+            print('audacium')
+        if self.check_mypaint.get() == 1:
+            print('MyPaint')
+        if self.check_audacity.get() == 1:
+            print('Audacity')
+        if self.check_deezer.get() == 1:
+            print('Deezer')
+        if self.check_spotify.get() == 1:
+            print('Spotify')
+        if self.check_itunes.get() == 1:
+            print('iTunes')
+        if self.check_clementine.get() == 1:
+            print('clementine')
+        if self.check_handbrake.get() == 1:
+            print('Handbrake')
+        if self.check_kdenlive.get() == 1:
+            print('KDEnlive')
+        if self.check_mpv.get() == 1:
+            print('MPV')
+        if self.check_pot_player.get() == 1:
+            print('Pot Player')
+        if self.check_paint_dot_net.get() == 1:
+            print('Paint.NET')
+        if self.check_krita.get() == 1:
+            print('Krita')
+        if self.check_tuxpaint.get() == 1:
+            print('TuxPaint')
+        if self.check_gimp.get() == 1:
+            print('GIMP')
+        if self.check_glimpse.get() == 1:
+            print('Glimpse')
+        if self.check_photogimp.get() == 1:
+            print('Photogimp')
+        if self.check_upscayl.get() == 1:
+            print('Upscay!')
+        if self.check_imageglass.get() == 1:
+            print('Imageglass')
+        
+        if self.check_vlc.get() == 0 and self.check_cider.get() == 0 and self.check_gom_player.get() == 0 and self.check_wondershare_filmora.get() == 0 and self.check_tidal.get() == 0 and self.check_audacium.get() == 0 and self.check_mypaint.get() == 0 and self.check_audacity.get() == 0 and self.check_deezer.get() == 0 and self.check_spotify.get() == 0 and self.check_itunes.get() == 0 and self.check_clementine.get() == 0 and self.check_handbrake.get() == 0 and self.check_kdenlive.get() == 0 and self.check_mpv.get() == 0 and self.check_pot_player.get() == 0 and self.check_paint_dot_net.get() == 0 and self.check_krita.get() == 0 and self.check_tuxpaint.get() == 0 and self.check_gimp.get() == 0 and self.check_glimpse.get() == 0 and self.check_photogimp.get() == 0 and self.check_upscayl.get() == 0 and self.check_imageglass.get() == 0:
+            print('No Media Software Selected')
     
     def install_util_packages(self):
         pass
