@@ -673,39 +673,51 @@ class App(customtkinter.CTk):
     def install_browser_packages(self):
         if self.check_brave_browser.get() == 1:
             print('brave')
+            os.system('winget install -e -id Brave.Brave')
             
         if self.check_microsoft_edge.get() == 1:
             print('edge')
+            os.system('winget install -e --id Microsoft.Edge')
             
         if self.check_k_meleon.get() == 1:
             print('k meleon')
+            os.system('winget install -e --id kmeleonbrowser.K-Meleon')
             
         if self.check_google_chrome.get() == 1:
             print('chrome')
+            os.system('winget install -e --id Google.Chrome')
             
         if self.check_vivaldi.get() == 1:
             print('vivaldi')
+            os.system('winget install -e --id VivaldiTechnologies.Vivaldi')
             
         if self.check_opera.get() == 1:
             print('opera')
+            os.system('winget install -e --id Opera.Opera')
             
         if self.check_mozilla_firefox.get() == 1:
             print('firefox')
+            os.system('winget install -e --id Mozilla.Firefox')
             
         if self.check_libreoffice.get() == 1:
             print('librewolf')
+            os.system('winget install -e --id LibreWolf.LibreWolf')
             
         if self.check_pale_moon.get() == 1:
             print('pale moon')
+            os.system('winget install -e --id MoonchildProductions.PaleMoon')
             
         if self.check_waterfox.get() == 1:
             print('waterfox')
+            os.system('winget install -e --if Waterfox.Waterfox')
             
         if self.check_midori.get() == 1:
             print('midori')
+            os.system('choco install midori-browser')
             
         if self.check_opera_gx.get() == 1:
             print('opera gx')
+            os.system('winget install -e --id Opera.OperaGX')
         
         if self.check_brave_browser.get() == 0 and self.check_microsoft_edge.get() == 0 and self.check_k_meleon.get() == 0 and self.check_google_chrome.get() == 0 and self.check_vivaldi.get() == 0 and self.check_opera.get() == 0 and self.check_mozilla_firefox.get() == 0 and self.check_librewolf.get() == 0 and self.check_pale_moon.get() == 0 and self.check_waterfox.get() == 0 and self.check_midori.get() == 0 and self.check_opera_gx.get() == 0:
             print('No browser selected')
@@ -713,66 +725,90 @@ class App(customtkinter.CTk):
     def install_game_packages(self):
         if self.check_retroarch.get() == 1:
             print('Retroarch')
+            os.system('winget install -e --id Libretro.RetroArch')
         
         if self.check_amazon_games.get() == 1:
             print('Amazon Games')
+            os.system('winget install -e --id Amazon.Games')
             
         if self.check_ubisoft_connect.get() == 1:
             print('Ubisoft Connect')
+            os.system('winget install -e --id Ubisoft.Connect')
             
         if self.check_dolphin.get() == 1:
             print('Dolphin Emulator')
+            os.system('winget install -e --id DolphinEmulator.Dolphin')
             
         if self.check_rpcs3.get() == 1:
             print('RPCS3 Emulator')
+            os.system('scoop bucket add games')
+            os.system('scoop install games/rpcs3')
             
         if self.check_epic_games_launcher.get() == 1:
             print('Epic Games Launcher')
+            os.system('winget install -e --id EpicGames.EpicGamesLauncher')
             
         if self.check_pcsx2.get() == 1:
             print('PCSX2 Emulator')
+            os.system('choco install pcsx2')
             
         if self.check_yuzu.get() == 1:
             print('Yuzu Emulator')
+            os.system('scoop bucket add games')
+            os.system('scoop install games/yuzu')
             
         if self.check_heroic_games_launcher.get() == 1:
             print('Heroic Games Launcher')
-            
+            os.system('winget install -e --id HeroicGamesLauncher.HeroicGamesLauncher')
+
         if self.check_gog_galaxy.get() == 1:
             print('GOG Galaxy')
+            os.system('winget install -e --id GOG.Galaxy')
             
         if self.check_itch_io.get() == 1:
             print('Itch.IO')
-            
+            os.system('winget install -e --id ItchIo.Itch')
+
         if self.check_minecraft_launcher.get() == 1:
             print('Minecraft Launcher')
+            os.system('winget install -e --id Mojang.MinecraftLauncher')
             
         if self.check_steam.get() == 1:
             print('Steam')
+            os.system('winget install -e --id Valve.Steam')
             
         if self.check_ea_app.get() == 1:
             print('EA App')
+            os.system('winget install -e --id ElectronicArts.EADesktop')
             
         if self.check_gdlauncher.get() == 1:
             print('GDLauncher')
+            os.system('winget install -e --id GorillaDevs.GDLauncher')
             
         if self.check_curseforge.get() == 1:
             print('CurseForge')
+            os.system('winget install -e --id Overwolf.CurseForge')
             
         if self.check_battle_net.get() == 1:
             print('Battle.net')
+            print('not yet implemented')
             
         if self.check_citra.get() == 1:
             print('Citra Emulator')
+            os.system('scoop bucket add games')
+            os.system('scoop install games/citra')
             
         if self.check_ppsspp.get() == 1:
             print('PPSSPP Emulator')
+            os.system('winget install -e --id PPSSPPTeam.PPSSPP')
             
         if self.check_blitz.get() == 1:
             print('Blitz')
+            os.system('winget install -e --id Blitz.Blitz')
             
         if self.check_playnite.get() == 1:
             print('Playnite')
+            os.system('winget install -e --id Playnite.Playnite')
             
         if self.check_retroarch.get() == 0 and self.check_amazon_games.get() == 0 and self.check_ubisoft_connect.get() == 0 and self.check_dolphin.get() == 0 and self.check_rpcs3.get() == 0 and self.check_epic_games_launcher.get() == 0 and self.check_pcsx2.get() == 0 and self.check_yuzu.get() == 0 and self.check_heroic_games_launcher.get() == 0 and self.check_gog_galaxy.get() == 0 and self.check_itch_io.get() == 0 and self.check_minecraft_launcher.get() == 0 and self.check_steam.get() == 0 and self.check_ea_app.get() == 0 and self.check_gdlauncher.get() == 0 and self.check_curseforge.get() == 0 and self.check_battle_net.get() == 0 and self.check_citra.get() == 0 and self.check_ppsspp.get() == 0 and self.check_blitz.get() == 0 and self.check_playnite.get() == 0:
             print('No game related software selected')
@@ -780,39 +816,51 @@ class App(customtkinter.CTk):
     def install_messaging_packages(self):
         if self.check_zoom.get() == 1:
             print('Zoom')
+            os.system('winget install -e --id Zoom.Zoom')
             
         if self.check_guilded.get() == 1:
             print('Guilded')
+            os.system('winget install -e --id Guilded.Guilded')
             
         if self.check_slack.get() == 1:
             print('Slack')
+            os.system('winget install -e --id SlackTechnologies.Slack')
             
         if self.check_hexchat.get() == 1:
             print('HexChat')
+            os.system('winget install -e --id HexChat.HexChat')
             
         if self.check_skype.get() == 1:
             print('Skype')
-            
+            os.system('winget install -e --id Microsoft.Skype')
+
         if self.check_discord.get() == 1:
             print('Discord')
+            os.system('winget install -e --id Discord.Discord')
             
         if self.check_teamspeak.get() == 1:
             print('TeamSpeak 3')
+            os.system('winget install -e --id TeamSpeakSystems.TeamSpeakClient')
             
         if self.check_telegram.get() == 1:
             print('Telegram Desktop')
+            os.system('winget install -e --id Telegram.TelegramDesktop')
             
         if self.check_whatsapp.get() == 1:
             print('WhatsApp Desktop')
+            os.system('winget install -e --id WhatsApp.WhatsApp')
             
         if self.check_viber.get() == 1:
             print('Viber Desktop')
+            os.system('winget install -e --id Viber.Viber')
             
         if self.check_microsoft_teams.get() == 1:
             print('Microsoft Teams')
+            os.system('winget install -e --id Microsoft.Teams')
             
         if self.check_signal.get() == 1:
             print('Signal Desktop')
+            os.system('winget install -e --id OpenWhisperSystems.Signal')
             
         if self.check_zoom.get() == 0 and self.check_guilded.get() == 0 and self.check_slack.get() == 0 and self.check_hexchat.get() == 0 and self.check_skype.get() == 0 and self.check_discord.get() == 0 and self.check_teamspeak.get() == 0 and self.check_telegram.get() == 0 and self.check_whatsapp.get() == 0 and self.check_viber.get() == 0 and self.check_microsoft_teams.get() == 0 and self.check_signal.get() == 0:
             print('No messaging software selected')
@@ -821,39 +869,51 @@ class App(customtkinter.CTk):
 
         if self.check_sedja_pdf.get() == 1:
             print('Sedja PDF')
+            print('Not Yet Implemented')
 
         if self.check_sumatra_pdf.get() == 1:
             print('SumatraPDF')
+            os.system('winget install -e --id SumatraPDF.SumatraPDF')
 
         if self.check_adobe_reader.get() == 1:
             print('Adobe Reader')
+            os.system('winget install -e --id Adobe.Acrobat.Reader.32-bit')
 
         if self.check_wps_office.get() == 1:
             print('WPS Office')
+            os.system('winget install -e --id Kingsoft.WPSOffice.CN')
 
         if self.check_masterpdf.get() == 1:
             print('Master PDF')
+            os.system('choco install master-pdf-editor')
 
         if self.check_foxit_reader.get() == 1:
             print('Foxit Reader')
+            os.system('winget install -e --id Foxit.FoxitReader')
 
         if self.check_libreoffice.get() == 1:
             print('Libreoffice')
+            os.system('winget install -e --id TheDocumentFoundation.LibreOffice')
 
         if self.check_openoffice.get() == 1:
             print('Openoffice')
+            os.system('winget install -e --id Apache.OpenOffice')
 
         if self.check_kingsoft_office.get() == 1:
             print('Kingsoft Office')
+            os.system('choco install kingsoft-office-free')
 
         if self.check_freeoffice.get() == 1:
             print('Freeoffice')
+            os.system('winget install -e --id SoftMaker.FreeOffice.2021')
 
         if self.check_onlyoffice.get() == 1:
             print('onlyoffice')
+            os.system('winget install -e --id ONLYOFFICE.DesktopEditors')
 
         if self.check_microsoft_office.get() == 1:
             print('Microsoft Office')
+            os.system('winget install -e --id matvelloso.electron-office-365')
 
         if self.check_sedja_pdf.get() == 0 and self.check_sumatra_pdf.get() == 0 and self.check_adobe_reader.get() == 0 and self.check_wps_office.get() == 0 and self.check_masterpdf.get() == 0 and self.check_foxit_reader.get() == 0 and self.check_libreoffice.get() == 0 and self.check_openoffice.get() == 0 and self.check_kingsoft_office.get() == 0 and self.check_freeoffice.get() == 0 and self.check_onlyoffice.get() == 0 and self.check_microsoft_office.get() == 0:
             print('No office suite selected')
@@ -862,21 +922,27 @@ class App(customtkinter.CTk):
 
         if self.check_vcredist.get() == 1:
             print('vcredist')
+            os.system('winget install -e --id Microsoft.VCRedist.2013.x64')
 
         if self.check_dotnet.get() == 1:
             print('dotnet')
+            os.system('winget install -e --id Microsoft.DotNet.Framework.DeveloperPack_4')
 
         if self.check_java.get() == 1:
             print('Java')
+            os.system('winget install -e --id Oracle.JavaRuntimeEnvironment')
 
         if self.check_openjdk.get() == 1:
             print('OpenJDK (Latest)')
+            os.system('winget install -e --id ojdkbuild.openjdk.11.jre')
 
         if self.check_openjdk8.get() == 1:
             print('OpenJDK 8')
+            os.system('choco install openjdk8')
 
         if self.check_directx.get() == 1:
             print('DirectX')
+            os.system('winget install -e --id Microsoft.DirectX')
         
         if self.check_vcredist.get() == 0 and self.check_dotnet.get() == 0 and self.check_java.get() == 0 and self.check_openjdk.get == 0 and self.check_openjdk8.get() == 0 and self.check_directx.get() == 0:
             print('No Runtimes Selected')
@@ -885,39 +951,51 @@ class App(customtkinter.CTk):
 
         if self.check_authme.get() == 1:
             print('Authme')
+            os.system('winget install -e --id Levminer.Authme')
 
         if self.check_authy.get() == 1:
             print('Authy')
+            os.system('winget install -e --id Twilio.Authy')
 
         if self.check_passwordhub.get() == 1:
             print('Passwordhub')
+            print('Not yet implemented')
 
         if self.check_toofast.get() == 1:
             print('2fast')
+            os.system('choco install 2fast')
 
         if self.check_yubico.get() == 1:
             print('yubico')
+            os.system('winget install -e --id Yubico.Authenticator')
 
         if self.check_bitwarden.get() == 1:
             print('bitwarden')
+            os.system('winget install -e --id Bitwarden.Bitwarden')
 
         if self.check_keepass.get() == 1:
             print('Keepass')
+            os.system('winget install -e --id DominikReichl.KeePass')
 
         if self.check_paswordsafe.get() == 1:
             print('Password Safe')
+            os.system('winget install -e --id RonyShapiro.PasswordSafe')
 
         if self.check_dashlane.get() == 1:
             print('dashlane')
+            os.system('winget install -e --id Dashlane.Dashlane')
 
         if self.check_panda.get() == 1:
             print('Panda antivirus')
+            os.system('choco install pandafreeantivirus')
 
         if self.check_adw_cleaner.get() == 1:
             print('ADW Cleaner')
+            os.system('choco install adwcleaner')
 
         if self.check_calmav.get() == 1:
             print('CalmAV')
+            print('Not yet implemented')
 
         if self.check_authme.get() == 0 and self.check_authy.get() == 0 and self.check_passwordhub.get() == 0 and self.check_toofast.get() == 0 and self.check_yubico.get() == 0 and self.check_bitwarden.get() == 0 and self.check_keepass.get() == 0 and self.check_paswordsafe.get() == 0 and self.check_dashlane.get() == 0 and self.check_panda.get() == 0 and self.check_adw_cleaner.get() == 0 and self.check_calmav.get == 0:
             print('No security software selected')
@@ -926,75 +1004,99 @@ class App(customtkinter.CTk):
 
         if self.check_vlc.get() == 1:
             print('vlc')
+            os.system('winget install -e --id VideoLAN.VLC')
 
         if self.check_cider.get() == 1:
             print('cider')
+            os.system('winget install -e --id CiderCollective.Cider')
 
         if self.check_gom_player.get() == 1:
             print('Gom Player')
+            os.system('winget install -e --id GOMLab.GOMPlayer')
 
         if self.check_wondershare_filmora.get() == 1:
             print('Wondershare Filmora')
+            os.system('winget install -e --id Wondershare.Filmora')
 
         if self.check_tidal.get() == 1:
             print('tidal')
+            os.system('winget install -e --id TIDALMusicAS.TIDAL')
 
         if self.check_audacium.get() == 1:
             print('audacium')
+            os.system('winget install -e --id SartoxOnlyGNU.Audacium')
 
         if self.check_mypaint.get() == 1:
             print('MyPaint')
+            os.system('winget install -e --id MyPaint.MyPaint')
 
         if self.check_audacity.get() == 1:
             print('Audacity')
+            os.system('winget install -e --id Audacity.Audacity')
 
         if self.check_deezer.get() == 1:
             print('Deezer')
+            os.system('winget install -e --id Deezer.Deezer')
 
         if self.check_spotify.get() == 1:
             print('Spotify')
+            os.system('winget install -e --id Spotify.Spotify')
 
         if self.check_itunes.get() == 1:
             print('iTunes')
+            os.system('winget install -e --id Apple.iTunes')
 
         if self.check_clementine.get() == 1:
             print('clementine')
+            os.system('winget install -e --id Clementine.Clementine')
 
         if self.check_handbrake.get() == 1:
             print('Handbrake')
+            os.system('winget install -e --id HandBrake.HandBrake')
 
         if self.check_kdenlive.get() == 1:
             print('KDEnlive')
+            os.system('winget install -e --id KDE.Kdenlive')
 
         if self.check_mpv.get() == 1:
             print('MPV')
+            os.system('choco install mpv')
 
         if self.check_pot_player.get() == 1:
             print('Pot Player')
+            os.system('winget install -e --id Daum.PotPlayer')
 
         if self.check_paint_dot_net.get() == 1:
             print('Paint.NET')
+            os.system('winget install -e --id dotPDNLLC.paintdotnet')
 
         if self.check_krita.get() == 1:
             print('Krita')
+            os.system('winget install -e --id KDE.Krita')
 
         if self.check_tuxpaint.get() == 1:
             print('TuxPaint')
+            os.system('winget install -e --id NewBreedSoftware.TuxPaint')
 
         if self.check_gimp.get() == 1:
             print('GIMP')
+            os.system('winget install -e --id GIMP.GIMP')
 
         if self.check_glimpse.get() == 1:
             print('Glimpse')
+            os.system('winget install -e --id Glimpse.Glimpse')
 
         if self.check_photogimp.get() == 1:
             print('Photogimp')
+            os.system('choco install photogimp')
 
         if self.check_upscayl.get() == 1:
             print('Upscay!')
+            os.system('winget install -e --id Upscayl.Upscayl')
 
         if self.check_imageglass.get() == 1:
             print('Imageglass')
+            os.system('winget install -e --id DuongDieuPhap.ImageGlass')
         
         if self.check_vlc.get() == 0 and self.check_cider.get() == 0 and self.check_gom_player.get() == 0 and self.check_wondershare_filmora.get() == 0 and self.check_tidal.get() == 0 and self.check_audacium.get() == 0 and self.check_mypaint.get() == 0 and self.check_audacity.get() == 0 and self.check_deezer.get() == 0 and self.check_spotify.get() == 0 and self.check_itunes.get() == 0 and self.check_clementine.get() == 0 and self.check_handbrake.get() == 0 and self.check_kdenlive.get() == 0 and self.check_mpv.get() == 0 and self.check_pot_player.get() == 0 and self.check_paint_dot_net.get() == 0 and self.check_krita.get() == 0 and self.check_tuxpaint.get() == 0 and self.check_gimp.get() == 0 and self.check_glimpse.get() == 0 and self.check_photogimp.get() == 0 and self.check_upscayl.get() == 0 and self.check_imageglass.get() == 0:
             print('No Media Software Selected')
@@ -1003,63 +1105,83 @@ class App(customtkinter.CTk):
 
         if self.check_winzip.get() == 1:
             print('Winzip')
+            os.system('winget install -e --id Corel.WinZip')
 
         if self.check_flameshot.get() == 1:
             print('flameshot')
+            os.system('winget install -e --id Flameshot.Flameshot')
 
         if self.check_notepad_plus_plus.get() == 1:
             print('Notepad++')
+            os.system('winget install -e --id Notepad++.Notepad++')
 
         if self.check_peazip.get() == 1:
             print('PeaZip')
+            os.system('winget install -e --id Giorgiotani.Peazip')
 
         if self.check_atom.get() == 1:
             print('Atom')
+            os.system('winget install -e --id GitHub.Atom')
 
         if self.check_sharex.get() == 1:
             print('ShareX')
+            os.system('winget install -e --id ShareX.ShareX')
 
         if self.check_trello.get() == 1:
             print('trello')
+            os.system('choco install whale')
 
         if self.check_sevenzip.get() == 1:
             print('7-zip')
+            os.system('winget install -e --id 7zip.7zip')
 
         if self.check_sublime_text.get() == 1:
             print('Sublime Text')
+            os.system('winget install -e --id SublimeHQ.SublimeText.4')
 
         if self.check_evernote.get() == 1:
             print('Evernote')
+            os.system('winget install -e --id evernote.evernote')
 
         if self.check_notion.get() == 1:
             print('Notion')
+            os.system('winget install -e --id Notion.Notion')
 
         if self.check_winrar.get() == 1:
             print('WinRAR')
+            os.system('winget install -e --id RARLab.WinRAR')
 
         if self.check_visual_studio_code.get() == 1:
             print('VS Code')
+            os.system('winget install -e --id Microsoft.VisualStudioCode')
 
         if self.check_imgburn.get() == 1:
             print('imgburn')
+            os.system('winget install -e --id LIGHTNINGUK.ImgBurn')
 
         if self.check_powertoys.get() == 1:
             print('Powertoys')
+            os.system('winget install -e --id Microsoft.PowerToys')
 
         if self.check_sysinternals_suite.get() == 1:
             print('Sysinternals Suite')
+            os.system('choco install sysinternals')
 
         if self.check_teracopy.get() == 1:
             print('Teracopy')
+            os.system('winget install -e --id CodeSector.TeraCopy')
 
         if self.check_adb.get() == 1:
             print('ADB')
+            os.system('winget install -e --id ClockworkMod.UniversalADBDriver')
 
         if self.check_flow.get() == 1:
             print('Flow Launcher')
-            
+            os.system('winget install -e --id Flow-Launcher.Flow-Launcher')
+
         if self.check_adguard.get() == 1:
             print('Adguard')
+            os.system('winget install -e --id AdGuard.AdGuard')
 
         if self.check_winzip.get() == 0 and self.check_flameshot.get() == 0 and self.check_notepad_plus_plus.get() == 0 and self.check_peazip.get() == 0 and self.check_atom.get() == 0 and self.check_sharex.get() == 0 and self.check_trello.get() == 0 and self.check_sevenzip.get() == 0 and self.check_sublime_text.get() == 0 and self.check_evernote.get() == 0 and self.check_notion.get() == 0 and self.check_winrar.get() == 0 and self.check_visual_studio_code.get() == 0 and self.check_imgburn.get() == 0 and self.check_powertoys.get() == 0 and self.check_sysinternals_suite.get() == 0 and self.check_teracopy.get() == 0 and self.check_adb.get() == 0 and self.check_flow.get() == 0 and self.check_adguard.get() == 0:
             print('No Utilities Selected')
