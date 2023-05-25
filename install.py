@@ -946,7 +946,49 @@ class App(customtkinter.CTk):
             print('No Media Software Selected')
     
     def install_util_packages(self):
-        pass
+        if self.check_winzip.get() == 1:
+            print('Winzip')
+        if self.check_flameshot.get() == 1:
+            print('flameshot')
+        if self.check_notepad_plus_plus.get() == 1:
+            print('Notepad++')
+        if self.check_peazip.get() == 1:
+            print('PeaZip')
+        if self.check_atom.get() == 1:
+            print('Atom')
+        if self.check_sharex.get() == 1:
+            print('ShareX')
+        if self.check_trello.get() == 1:
+            print('trello')
+        if self.check_sevenzip.get() == 1:
+            print('7-zip')
+        if self.check_sublime_text.get() == 1:
+            print('Sublime Text')
+        if self.check_evernote.get() == 1:
+            print('Evernote')
+        if self.check_notion.get() == 1:
+            print('Notion')
+        if self.check_winrar.get() == 1:
+            print('WinRAR')
+        if self.check_visual_studio_code.get() == 1:
+            print('VS Code')
+        if self.check_imgburn.get() == 1:
+            print('imgburn')
+        if self.check_powertoys.get() == 1:
+            print('Powertoys')
+        if self.check_sysinternals_suite.get() == 1:
+            print('Sysinternals Suite')
+        if self.check_teracopy.get() == 1:
+            print('Teracopy')
+        if self.check_adb.get() == 1:
+            print('ADB')
+        if self.check_flow.get() == 1:
+            print('Flow Launcher')
+        if self.check_adguard.get() == 1:
+            print('Adguard')
+
+        if self.check_winzip.get() == 0 and self.check_flameshot.get() == 0 and self.check_notepad_plus_plus.get() == 0 and self.check_peazip.get() == 0 and self.check_atom.get() == 0 and self.check_sharex.get() == 0 and self.check_trello.get() == 0 and self.check_sevenzip.get() == 0 and self.check_sublime_text.get() == 0 and self.check_evernote.get() == 0 and self.check_notion.get() == 0 and self.check_winrar.get() == 0 and self.check_visual_studio_code.get() == 0 and self.check_imgburn.get() == 0 and self.check_powertoys.get() == 0 and self.check_sysinternals_suite.get() == 0 and self.check_teracopy.get() == 0 and self.check_adb.get() == 0 and self.check_flow.get() == 0 and self.check_adguard.get() == 0:
+            print('No Utilities Selected')
 
 
 if __name__ == "__main__":
