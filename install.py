@@ -818,7 +818,30 @@ class App(customtkinter.CTk):
             print('No messaging software selected')
     
     def install_office_packages(self):
-        pass
+        if self.check_sedja_pdf.get() == 1:
+            print('Sedja PDF')
+        if self.check_sumatra_pdf.get() == 1:
+            print('SumatraPDF')
+        if self.check_adobe_reader.get() == 1:
+            print('Adobe Reader')
+        if self.check_wps_office.get() == 1:
+            print('WPS Office')
+        if self.check_masterpdf.get() == 1:
+            print('Master PDF')
+        if self.check_foxit_reader.get() == 1:
+            print('Foxit Reader')
+        if self.check_libreoffice.get() == 1:
+            print('Libreoffice')
+        if self.check_openoffice.get() == 1:
+            print('Openoffice')
+        if self.check_kingsoft_office.get() == 1:
+            print('Kingsoft Office')
+        if self.check_freeoffice.get() == 1:
+            print('Freeoffice')
+        if self.check_onlyoffice.get() == 1:
+            print('onlyoffice')
+        if self.check_microsoft_office.get() == 1:
+            print('Microsoft Office')
     
     def install_runtime_packages(self):
         pass
