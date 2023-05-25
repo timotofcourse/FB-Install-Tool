@@ -864,7 +864,33 @@ class App(customtkinter.CTk):
             print('No Runtimes Selected')
     
     def install_security_packages(self):
-        pass
+        if self.check_authme.get() == 1:
+            print('Authme')
+        if self.check_authy.get() == 1:
+            print('Authy')
+        if self.check_passwordhub.get() == 1:
+            print('Passwordhub')
+        if self.check_toofast.get() == 1:
+            print('2fast')
+        if self.check_yubico.get() == 1:
+            print('yubico')
+        if self.check_bitwarden.get() == 1:
+            print('bitwarden')
+        if self.check_keepass.get() == 1:
+            print('Keepass')
+        if self.check_paswordsafe.get() == 1:
+            print('Password Safe')
+        if self.check_dashlane.get() == 1:
+            print('dashlane')
+        if self.check_panda.get() == 1:
+            print('Panda antivirus')
+        if self.check_adw_cleaner.get() == 1:
+            print('ADW Cleaner')
+        if self.check_calmav.get() == 1:
+            print('CalmAV')
+
+        if self.check_authme.get() == 0 and self.check_authy.get() == 0 and self.check_passwordhub.get() == 0 and self.check_toofast.get() == 0 and self.check_yubico.get() == 0 and self.check_bitwarden.get() == 0 and self.check_keepass.get() == 0 and self.check_paswordsafe.get() == 0 and self.check_dashlane.get() == 0 and self.check_panda.get() == 0 and self.check_adw_cleaner.get() == 0 and self.check_calmav.get == 0:
+            print('No security software selected')
     
     def install_media_packages(self):
         pass
