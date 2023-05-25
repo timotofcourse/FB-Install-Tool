@@ -842,9 +842,26 @@ class App(customtkinter.CTk):
             print('onlyoffice')
         if self.check_microsoft_office.get() == 1:
             print('Microsoft Office')
+
+        if self.check_sedja_pdf.get() == 0 and self.check_sumatra_pdf.get() == 0 and self.check_adobe_reader.get() == 0 and self.check_wps_office.get() == 0 and self.check_masterpdf.get() == 0 and self.check_foxit_reader.get() == 0 and self.check_libreoffice.get() == 0 and self.check_openoffice.get() == 0 and self.check_kingsoft_office.get() == 0 and self.check_freeoffice.get() == 0 and self.check_onlyoffice.get() == 0 and self.check_microsoft_office.get() == 0:
+            print('No office suite selected')
     
     def install_runtime_packages(self):
-        pass
+        if self.check_vcredist.get() == 1:
+            print('vcredist')
+        if self.check_dotnet.get() == 1:
+            print('dotnet')
+        if self.check_java.get() == 1:
+            print('Java')
+        if self.check_openjdk.get() == 1:
+            print('OpenJDK (Latest)')
+        if self.check_openjdk8.get() == 1:
+            print('OpenJDK 8')
+        if self.check_directx.get() == 1:
+            print('DirectX')
+        
+        if self.check_vcredist.get() == 0 and self.check_dotnet.get() == 0 and self.check_java.get() == 0 and self.check_openjdk.get == 0 and self.check_openjdk8.get() == 0 and self.check_directx.get() == 0:
+            print('No Runtimes Selected')
     
     def install_security_packages(self):
         pass
