@@ -818,28 +818,40 @@ class App(customtkinter.CTk):
             print('No messaging software selected')
     
     def install_office_packages(self):
+
         if self.check_sedja_pdf.get() == 1:
             print('Sedja PDF')
+
         if self.check_sumatra_pdf.get() == 1:
             print('SumatraPDF')
+
         if self.check_adobe_reader.get() == 1:
             print('Adobe Reader')
+
         if self.check_wps_office.get() == 1:
             print('WPS Office')
+
         if self.check_masterpdf.get() == 1:
             print('Master PDF')
+
         if self.check_foxit_reader.get() == 1:
             print('Foxit Reader')
+
         if self.check_libreoffice.get() == 1:
             print('Libreoffice')
+
         if self.check_openoffice.get() == 1:
             print('Openoffice')
+
         if self.check_kingsoft_office.get() == 1:
             print('Kingsoft Office')
+
         if self.check_freeoffice.get() == 1:
             print('Freeoffice')
+
         if self.check_onlyoffice.get() == 1:
             print('onlyoffice')
+
         if self.check_microsoft_office.get() == 1:
             print('Microsoft Office')
 
@@ -847,16 +859,22 @@ class App(customtkinter.CTk):
             print('No office suite selected')
     
     def install_runtime_packages(self):
+
         if self.check_vcredist.get() == 1:
             print('vcredist')
+
         if self.check_dotnet.get() == 1:
             print('dotnet')
+
         if self.check_java.get() == 1:
             print('Java')
+
         if self.check_openjdk.get() == 1:
             print('OpenJDK (Latest)')
+
         if self.check_openjdk8.get() == 1:
             print('OpenJDK 8')
+
         if self.check_directx.get() == 1:
             print('DirectX')
         
@@ -864,28 +882,40 @@ class App(customtkinter.CTk):
             print('No Runtimes Selected')
     
     def install_security_packages(self):
+
         if self.check_authme.get() == 1:
             print('Authme')
+
         if self.check_authy.get() == 1:
             print('Authy')
+
         if self.check_passwordhub.get() == 1:
             print('Passwordhub')
+
         if self.check_toofast.get() == 1:
             print('2fast')
+
         if self.check_yubico.get() == 1:
             print('yubico')
+
         if self.check_bitwarden.get() == 1:
             print('bitwarden')
+
         if self.check_keepass.get() == 1:
             print('Keepass')
+
         if self.check_paswordsafe.get() == 1:
             print('Password Safe')
+
         if self.check_dashlane.get() == 1:
             print('dashlane')
+
         if self.check_panda.get() == 1:
             print('Panda antivirus')
+
         if self.check_adw_cleaner.get() == 1:
             print('ADW Cleaner')
+
         if self.check_calmav.get() == 1:
             print('CalmAV')
 
@@ -893,52 +923,76 @@ class App(customtkinter.CTk):
             print('No security software selected')
     
     def install_media_packages(self):
+
         if self.check_vlc.get() == 1:
             print('vlc')
+
         if self.check_cider.get() == 1:
             print('cider')
+
         if self.check_gom_player.get() == 1:
             print('Gom Player')
+
         if self.check_wondershare_filmora.get() == 1:
             print('Wondershare Filmora')
+
         if self.check_tidal.get() == 1:
             print('tidal')
+
         if self.check_audacium.get() == 1:
             print('audacium')
+
         if self.check_mypaint.get() == 1:
             print('MyPaint')
+
         if self.check_audacity.get() == 1:
             print('Audacity')
+
         if self.check_deezer.get() == 1:
             print('Deezer')
+
         if self.check_spotify.get() == 1:
             print('Spotify')
+
         if self.check_itunes.get() == 1:
             print('iTunes')
+
         if self.check_clementine.get() == 1:
             print('clementine')
+
         if self.check_handbrake.get() == 1:
             print('Handbrake')
+
         if self.check_kdenlive.get() == 1:
             print('KDEnlive')
+
         if self.check_mpv.get() == 1:
             print('MPV')
+
         if self.check_pot_player.get() == 1:
             print('Pot Player')
+
         if self.check_paint_dot_net.get() == 1:
             print('Paint.NET')
+
         if self.check_krita.get() == 1:
             print('Krita')
+
         if self.check_tuxpaint.get() == 1:
             print('TuxPaint')
+
         if self.check_gimp.get() == 1:
             print('GIMP')
+
         if self.check_glimpse.get() == 1:
             print('Glimpse')
+
         if self.check_photogimp.get() == 1:
             print('Photogimp')
+
         if self.check_upscayl.get() == 1:
             print('Upscay!')
+
         if self.check_imageglass.get() == 1:
             print('Imageglass')
         
@@ -946,44 +1000,64 @@ class App(customtkinter.CTk):
             print('No Media Software Selected')
     
     def install_util_packages(self):
+
         if self.check_winzip.get() == 1:
             print('Winzip')
+
         if self.check_flameshot.get() == 1:
             print('flameshot')
+
         if self.check_notepad_plus_plus.get() == 1:
             print('Notepad++')
+
         if self.check_peazip.get() == 1:
             print('PeaZip')
+
         if self.check_atom.get() == 1:
             print('Atom')
+
         if self.check_sharex.get() == 1:
             print('ShareX')
+
         if self.check_trello.get() == 1:
             print('trello')
+
         if self.check_sevenzip.get() == 1:
             print('7-zip')
+
         if self.check_sublime_text.get() == 1:
             print('Sublime Text')
+
         if self.check_evernote.get() == 1:
             print('Evernote')
+
         if self.check_notion.get() == 1:
             print('Notion')
+
         if self.check_winrar.get() == 1:
             print('WinRAR')
+
         if self.check_visual_studio_code.get() == 1:
             print('VS Code')
+
         if self.check_imgburn.get() == 1:
             print('imgburn')
+
         if self.check_powertoys.get() == 1:
             print('Powertoys')
+
         if self.check_sysinternals_suite.get() == 1:
             print('Sysinternals Suite')
+
         if self.check_teracopy.get() == 1:
             print('Teracopy')
+
         if self.check_adb.get() == 1:
             print('ADB')
+
         if self.check_flow.get() == 1:
             print('Flow Launcher')
+            
         if self.check_adguard.get() == 1:
             print('Adguard')
 
