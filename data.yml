@@ -164,6 +164,12 @@
   package_name: Overwolf.CurseForge
   category: Games
 
+# - name: Modrinth
+#   description: Discover, play, and share Minecraft content through our open-source platform built for the community.
+#   package_manager: 
+#   package_name:  
+#   category: Games
+
 - name: PPSSPP
   description: PPSSPP can run your PSP games on your PC in full HD resolution; it can even upscale textures that would otherwise be too blurry as they were made for the small screen of the original PSP
   package_manager: winget
@@ -463,51 +469,265 @@
 
 # Media
 
-vlc
-cider
-gom player
-filmora
-tidal
-audacium
-mypaint
-audacity
-deezer
-spotify
-itunes
-clementine
-handbrake
-kdenlive
-mpv
-pot player
-paint dot net
-krita
-tuxpaint
-gimp
-glimpse
-photogimp
-upscayl
-imageglass
+- name: VLC media player
+  description: VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols. Simple, fast and powerful ✓ Plays everything - Files, Discs, Webcams, Devices and Streams. ✓ Pays most codecs with no codec packs needed - MPEG-2, MPEG-4, H.264, MKV, WebM, WMV, MP3... ✓ Runs on all platforms - Windows, Linux, Mac OS X, Unix, iOS, Android ... ✓ Completely Free - no spyware, no ads and no user tracking.
+  package_manager: winget
+  package_name: VideoLAN.VLC
+  category: Media
+
+- name: Cider
+  description: A new cross-platform Apple Music experience based on Electron and Vue.js written from scratch with performance in mind. Compiled from the latest working build of git stable branch.
+  package_manager: winget
+  package_name: CiderCollective.Cider
+  category: Media
+
+- name: GOM Player
+  description: GOM Player is a free video player that allows you to play videos in various formats through an integrated codec, find subtitles, and watch 360-degree VR videos.
+  package_manager: winget
+  package_name: GOMLab.GOMPlayer
+  category: Media
+
+- name: Wondershare Filmora
+  description: Filmora is an intuitive video editor for every skill level. Filmora makes it easy for anyone to be creative. Jump into an editing experience where advanced features are simple and fun. We got rid of repetitive tasks so you can devote your energy to your imagination. Get inspired by Filmora, an editor designed for creators like you.
+  package_manager: winget
+  package_name: Wondershare.Filmora
+  category: Media
+
+- name: TIDAL
+  description: TIDAL is a global music streaming service with high fidelity sound, hi-def video quality, and expertly curated playlists.
+  package_manager: winget
+  package_name: TIDALMusicAS.TIDAL
+  category: Media
+
+- name: Audacium
+  description: Audacium is an easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems. Developed by a group of volunteers as open source.
+  package_manager: winget
+  package_name: SartoxOnlyGNU.Audacium
+  category: Media
+
+- name: MyPaint
+  description: MyPaint is a simple drawing and painting program that works well with Wacom-style graphics tablets.
+  package_manager: winget
+  package_name: MyPaint.MyPaint
+  category: Media
+
+- name: Audacity
+  description: Audacity is a free, easy-to-use, multi-track audio editor and recorder for Windows, macOS, GNU/Linux and other operating systems.
+  package_manager: winget
+  package_name: Audacity.Audacity
+  category: Media
+
+- name: Deezer
+  description: Deezer is a French online music streaming service.
+  package_manager: winget
+  package_name: Deezer.Deezer
+  category: Media
+
+- name: Spotify
+  description: With Spotify, it’s easy to find the right music or podcast for every moment – on your phone, your computer, your tablet and more. There are millions of tracks and episodes on Spotify. So whether you’re behind the wheel, working out, partying or relaxing, the right music or podcast is always at your fingertips. Choose what you want to listen to, or let Spotify surprise you. You can also browse through the collections of friends, artists, and celebrities, or create a radio station and just sit back.
+  package_manager: winget
+  package_name: Spotify.Spotify
+  category: Media
+
+- name: iTunes
+  description: iTunes is a media player developed by Apple that also can be used to communicate with Apple mobile devices
+  package_manager: winget
+  package_name: Apple.iTunes
+  category: Media
+
+- name: Clementine
+  description: multiplatform music player
+  package_manager: winget
+  package_name: Clementine.Clementine
+  category: Media
+
+- name: HandBrake
+  description: HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
+  package_manager: winget
+  package_name: HandBrake.HandBrake
+  category: Media
+
+- name: Kdenlive
+  description: Kdenlive is an acronym for KDE Non-Linear Video Editor. It is primarily aimed at the GNU/Linux platform but also works on BSD and MacOS. It is currently being ported to Windows as a GSOC project.
+  package_manager: winget
+  package_name: KDE.Kdenlive
+  category: Media
+
+- name: mpv
+  description: What's the difference between this package and mpvio? None, but this package is stuck following a now defunct version scheme of mpv. Why does the mpv package use a different version than the official project? Long ago, the Windows builds of mpv were provided by a contributor who made Windows specific changes to mpv. Since the chocolatey package was following that specific build, it made sense (at the time) to mirror that build's version scheme.
+  package_manager: choco
+  package_name: mpv
+  category: Media
+
+- name: PotPlayer
+  description: Powerful multimedia player that supports a variety of different video codecs and formats.
+  package_manager: winget
+  package_name: Daum.PotPlayer
+  category: Media
+
+- name: paint.net
+  description: Paint.NET is image and photo editing software for PCs that run Windows
+  package_manager: winget
+  package_name: dotPDNLLC.paintdotnet
+  category: Media
+
+- name: Krita
+  description: Krita is a FREE and open source painting tool designed for concept artists, illustrators, matte and texture artists, and the VFX industry. Krita has been in development for over 10 years and has had an explosion in growth recently. It offers many common and innovative features to help the amateur and professional alike.
+  package_manager: winget
+  package_name: KDE.Krita
+  category: Media
+
+- name: GIMP
+  description: GIMP is an acronym for GNU Image Manipulation Program. It is a freely distributed program for such tasks as photo retouching, image composition and image authoring.
+  package_manager: winget
+  package_name: GIMP.GIMP
+  category: Media
+
+- name: Glimpse
+  description: Glimpse Image Editor is a “fork” or “respin” of the GNU Image Manipulation Program, and it is also an open source image editing application.
+  package_manager: winget
+  package_name: Glimpse.Glimpse
+  category: Media
+
+- name: PhotoGIMP
+  description: A simple Patch for GIMP 2.10+ to help all Photoshop Users. Tool organization to mimic the position of Adobe's Photoshop; Hundreds of new fonts by default; New Python filters installed by default, such as "heal selection"; New Splash Screen New default settings to maximize space on the canvas; Shortcuts similar to the ones on Photoshop, following Adobe's Documentation; New icon and Name from custom .desktop file. The new default language is English (you can still change in the Settings if you want)
+  package_manager: choco
+  package_name: photogimp
+  category: Media
+
+- name: Upscayl
+  description: Free and Open Source AI Image Upscaler for Linux, MacOS and Windows built with Linux-First philosophy.
+  package_manager: winget
+  package_name: Upscayl.Upscayl
+  category: Media
+
+- name: ImageGlass
+  description: ImageGlass is a simple picture viewer with which you will be able to display your image collection in a very similar way to the one that Windows provides by default, but with some additional functions. This application will allow you to better manage your pictures thanks to the options it includes and the extension it enables to install for adding more functions and widening its possibilities.
+  package_manager: winget
+  package_name: DuongDieuPhap.ImageGlass
+  category: Media
+
 
 # Utilities
 
-winzip
-flameshot
-notepad plus plus
-peazip
-atom
-sharex
-trello desktop
-sevenzip
-sublime text
-evernote
-notion
-winrar
-visual studio code
-imgburn
-powertoys
-sysinternals suite
-teracopy
-adb platform tools
-flow launcher
-adguard
+- name: WinZip
+  description: WinZip Compression Utility
+  package_manager: winget
+  package_name: Corel.WinZip
+  category: Media
+
+- name: Flameshot
+  description: Powerful yet simple to use screenshot software.
+  package_manager: winget
+  package_name: Flameshot.Flameshot
+  category: Media
+
+- name: Notepad++
+  description: Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GNU General Public License.
+  package_manager: winget
+  package_name: Notepad++.Notepad++
+  category: Media
+
+- name: PeaZip
+  description: PeaZip is a free file archiver utility and rar extractor for Windows and Linux, work with 200+ archive types and variants (7z, ace, arc, bz2, cab, gz, iso, paq, pea, rar, tar, wim, zip, zipx...), handle spanned archives (001, r01, z01...) and support multiple archive encryption standards.
+  package_manager: winget
+  package_name: Giorgiotani.Peazip
+  category: Media
+
+- name: Atom
+  description: A hackable text editor for the 21st Century, free and open source.
+  package_manager: winget
+  package_name: GitHub.Atom
+  category: Media
+
+- name: ShareX
+  description: ShareX is a lightweight free and open source program that allows you to capture or record any area of your screen and share it with a single press of a key. ShareX offers numerous methods of capture including full screen, monitor, freehand and so much more. It also features plenty of customizable after-capture tasks and supports more than 80 different image, text, and file hosting services, as well as many URL shortening and sharing services.
+  package_manager: winget
+  package_name: ShareX.ShareX
+  category: Media
+
+- name: Whale
+  description: This is an unofficial Trello app. Trello lets you work more collaboratively and get more done. Trello boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.
+  package_manager: choco
+  package_name: whale
+  category: Media
+
+- name: 7-Zip
+  description: Free and open source file archiver with a high compression ratio.
+  package_manager: winget
+  package_name: 7zip.7zip
+  category: Media
+
+- name: Sublime Text 4
+  description: Sublime is a sophisticated cross-platform text editor for code, markup and prose.
+  package_manager: winget
+  package_name: 7SublimeHQ.SublimeText.4
+  category: Media
+
+- name: Evernote
+  description: Evernote helps you focus on what matters most and have access to your information when you need it. Input typed notes or scan handwritten notes. Add to-do, photos, images, web pages, or audio ... and it’s all instantly searchable. Organize notes any way you want and share with anyone. And Evernote syncs across your devices so your information is always with you, everywhere you go.
+  package_manager: winget
+  package_name: evernote.evernote
+  category: Media
+
+- name: Notion
+  description: All-in-one workspace. One tool for your whole team. Write, plan, and get organized.
+  package_manager: winget
+  package_name: Notion.Notion
+  category: Media
+
+- name: Notion Enhanced
+  description: The all-in-one workspace for your notes and tasks, but enhanced. Notion with notion-enhancer embedded.
+  package_manager: winget
+  package_name: NotionRepackaged.NotionEnhanced
+  category: Media
+
+- name: WinRAR
+  description: WinRAR is a powerful archiver (RAR and ZIP) and extractor tool that can open all popular file formats.
+  package_manager: winget
+  package_name: RARLab.WinRAR
+  category: Media
+
+- name: Visual Studio Code
+  description: Microsoft Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.
+  package_manager: winget
+  package_name: Microsoft.VisualStudioCode
+  category: Media
+
+- name: ImgBurn
+  description: With ImgBurn you can burn CDs, DVDs and Blu-ray dics. The software can also read CD and DVD images and copy them. The usage is very simple. Just select the right image and the burning procedure can start.
+  package_manager: winget
+  package_name: LIGHTNINGUK.ImgBurn
+  category: Media
+
+- name: PowerToys
+  description: Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows.
+  package_manager: winget
+  package_name: Microsoft.PowerToys
+  category: Media
+
+- name: Sysinternals Suite
+  description: The Sysinternals Troubleshooting Utilities have been rolled up into a single Suite of tools. This file contains the individual troubleshooting tools and help files. It does not contain non-troubleshooting tools like the BSOD Screen Saver
+  package_manager: winget
+  package_name: 9P7KNL5RWT25
+  category: Media
+
+- name: TeraCopy
+  description: A popular utility designed to copy files faster and more reliably, providing the user with many features. TeraCopy uses dynamically adjusted buffers to reduce seek time. It can resume broken file transfers and skup bad files during the copying process.
+  package_manager: winget
+  package_name: CodeSector.TeraCopy
+  category: Media
+
+- name: Flow Launcher
+  description: Keystroke launcher for Windows to search, manage and launch files, folders bookmarks, websites and more.
+  package_manager: winget
+  package_name: Flow-Launcher.Flow-Launcher
+  category: Media
+
+- name: AdGuard
+  description: AdGuard is a unique desktop program that has all the necessary features for the best web experience. The software combines the world's most advanced ad blocker for Windows, a whole privacy protection module, and a parental control tool — all working in any browser or app.
+  package_manager: winget
+  package_name: AdGuard.AdGuard
+  category: Media
+
 
