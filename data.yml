@@ -164,11 +164,11 @@
   package_name: Overwolf.CurseForge
   category: Games
 
-# - name: Modrinth
-#   description: Discover, play, and share Minecraft content through our open-source platform built for the community.
-#   package_manager: 
-#   package_name:  
-#   category: Games
+- name: Modrinth
+  description: Discover, play, and share Minecraft content through our open-source platform built for the community.
+  package_manager: winget
+  package_name:  modrinth.ModrinthApp
+  category: Games
 
 - name: PPSSPP
   description: PPSSPP can run your PSP games on your PC in full HD resolution; it can even upscale textures that would otherwise be too blurry as they were made for the small screen of the original PSP
@@ -344,7 +344,7 @@
 
 # Runtimes
 
-- name: Microsoft Visual C++ 2013 Redistributable (x64)
+- name: Microsoft Visual C++ 2013 Redistributable
   description: The Microsoft Visual C++ 2013 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2013 on a computer that does not have Visual C++ 2013 installed.
   package_manager: winget
   package_name: Microsoft.VCRedist.2013.x64
@@ -614,120 +614,120 @@
   description: WinZip Compression Utility
   package_manager: winget
   package_name: Corel.WinZip
-  category: Media
+  category: Utilities
 
 - name: Flameshot
   description: Powerful yet simple to use screenshot software.
   package_manager: winget
   package_name: Flameshot.Flameshot
-  category: Media
+  category: Utilities
 
 - name: Notepad++
   description: Notepad++ is a free (as in “free speech” and also as in “free beer”) source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GNU General Public License.
   package_manager: winget
   package_name: Notepad++.Notepad++
-  category: Media
+  category: Utilities
 
 - name: PeaZip
   description: PeaZip is a free file archiver utility and rar extractor for Windows and Linux, work with 200+ archive types and variants (7z, ace, arc, bz2, cab, gz, iso, paq, pea, rar, tar, wim, zip, zipx...), handle spanned archives (001, r01, z01...) and support multiple archive encryption standards.
   package_manager: winget
   package_name: Giorgiotani.Peazip
-  category: Media
+  category: Utilities
 
 - name: Atom
   description: A hackable text editor for the 21st Century, free and open source.
   package_manager: winget
   package_name: GitHub.Atom
-  category: Media
+  category: Utilities
 
 - name: ShareX
   description: ShareX is a lightweight free and open source program that allows you to capture or record any area of your screen and share it with a single press of a key. ShareX offers numerous methods of capture including full screen, monitor, freehand and so much more. It also features plenty of customizable after-capture tasks and supports more than 80 different image, text, and file hosting services, as well as many URL shortening and sharing services.
   package_manager: winget
   package_name: ShareX.ShareX
-  category: Media
+  category: Utilities
 
 - name: Whale
   description: This is an unofficial Trello app. Trello lets you work more collaboratively and get more done. Trello boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.
   package_manager: choco
   package_name: whale
-  category: Media
+  category: Utilities
 
 - name: 7-Zip
   description: Free and open source file archiver with a high compression ratio.
   package_manager: winget
   package_name: 7zip.7zip
-  category: Media
+  category: Utilities
 
 - name: Sublime Text 4
   description: Sublime is a sophisticated cross-platform text editor for code, markup and prose.
   package_manager: winget
   package_name: 7SublimeHQ.SublimeText.4
-  category: Media
+  category: Utilities
 
 - name: Evernote
   description: Evernote helps you focus on what matters most and have access to your information when you need it. Input typed notes or scan handwritten notes. Add to-do, photos, images, web pages, or audio ... and it’s all instantly searchable. Organize notes any way you want and share with anyone. And Evernote syncs across your devices so your information is always with you, everywhere you go.
   package_manager: winget
   package_name: evernote.evernote
-  category: Media
+  category: Utilities
 
 - name: Notion
   description: All-in-one workspace. One tool for your whole team. Write, plan, and get organized.
   package_manager: winget
   package_name: Notion.Notion
-  category: Media
+  category: Utilities
 
 - name: Notion Enhanced
   description: The all-in-one workspace for your notes and tasks, but enhanced. Notion with notion-enhancer embedded.
   package_manager: winget
   package_name: NotionRepackaged.NotionEnhanced
-  category: Media
+  category: Utilities
 
 - name: WinRAR
   description: WinRAR is a powerful archiver (RAR and ZIP) and extractor tool that can open all popular file formats.
   package_manager: winget
   package_name: RARLab.WinRAR
-  category: Media
+  category: Utilities
 
 - name: Visual Studio Code
   description: Microsoft Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications. Microsoft Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.
   package_manager: winget
   package_name: Microsoft.VisualStudioCode
-  category: Media
+  category: Utilities
 
 - name: ImgBurn
   description: With ImgBurn you can burn CDs, DVDs and Blu-ray dics. The software can also read CD and DVD images and copy them. The usage is very simple. Just select the right image and the burning procedure can start.
   package_manager: winget
   package_name: LIGHTNINGUK.ImgBurn
-  category: Media
+  category: Utilities
 
 - name: PowerToys
   description: Microsoft PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity. Inspired by the Windows 95 era PowerToys project, this reboot provides power users with ways to squeeze more efficiency out of the Windows 10 shell and customize it for individual workflows.
   package_manager: winget
   package_name: Microsoft.PowerToys
-  category: Media
+  category: Utilities
 
 - name: Sysinternals Suite
   description: The Sysinternals Troubleshooting Utilities have been rolled up into a single Suite of tools. This file contains the individual troubleshooting tools and help files. It does not contain non-troubleshooting tools like the BSOD Screen Saver
   package_manager: winget
   package_name: 9P7KNL5RWT25
-  category: Media
+  category: Utilities
 
 - name: TeraCopy
   description: A popular utility designed to copy files faster and more reliably, providing the user with many features. TeraCopy uses dynamically adjusted buffers to reduce seek time. It can resume broken file transfers and skup bad files during the copying process.
   package_manager: winget
   package_name: CodeSector.TeraCopy
-  category: Media
+  category: Utilities
 
 - name: Flow Launcher
   description: Keystroke launcher for Windows to search, manage and launch files, folders bookmarks, websites and more.
   package_manager: winget
   package_name: Flow-Launcher.Flow-Launcher
-  category: Media
+  category: Utilities
 
 - name: AdGuard
   description: AdGuard is a unique desktop program that has all the necessary features for the best web experience. The software combines the world's most advanced ad blocker for Windows, a whole privacy protection module, and a parental control tool — all working in any browser or app.
   package_manager: winget
   package_name: AdGuard.AdGuard
-  category: Media
+  category: Utilities
 
 
