@@ -338,25 +338,130 @@
 
 # Runtimes
 
-vcredist
-donet
-java
-openjdk
-openjdk 8
-directx standalone
+- name: Microsoft Visual C++ 2013 Redistributable (x64)
+  description: The Microsoft Visual C++ 2013 Redistributable Package (x64) installs runtime components of Visual C++ Libraries required to run 64-bit applications developed with Visual C++ 2013 on a computer that does not have Visual C++ 2013 installed.
+  package_manager: winget
+  package_name: Microsoft.VCRedist.2013.x64
+  category: Runtimes
 
-authme
-authy
-passwordhub
-toofast
-yubico
-bitwarden
-keepass
-passwordsafe
-dashlane
-panda
-adw cleaner
-calmav
+- name: Microsoft .NET Runtime 7.0
+  description: .NET is a free, cross-platform, open-source developer platform for building many different types of applications.
+  package_manager: winget
+  package_name: Microsoft.DotNet.Runtime.7
+  category: Runtimes
+
+- name: Java 8
+  description: Java allows you to play online games, chat with people around the world, calculate your mortgage interest, and view images in 3D, just to name a few. Its also integral to the intranet applications and other e-business solutions that are the foundation of corporate computing. Please note you now need a Java License from Oracle to use unless installed for Personal Use and Development Use.
+  package_manager: winget
+  package_name: Oracle.JavaRuntimeEnvironment
+  category: Runtimes
+
+- name: OpenJDK 11
+  description: Community builds using source code from OpenJDK project
+  package_manager: winget
+  package_name: ojdkbuild.openjdk.11.jdk
+  category: Runtimes
+
+- name: OpenJDK 8
+  description: Deprecated as the project is no longer maintained https://adoptopenjdk.net/upstream.html. This package now installs Adoptium Temurin. OpenJDK is an open source Java Development Kit provided by Oracle
+  package_manager: choco
+  package_name: openjdk8
+  category: Runtimes
+
+- name: OpenJDK 21
+  description: OpenJDK is an open source Java Development Kit provided by Oracle
+  package_manager: choco
+  package_name: openjdk
+  category: Runtimes
+
+- name: Eclipse Temurin JDK with Hotspot 17
+  description: Temurin JDK
+  package_manager: winget
+  package_name: EclipseAdoptium.Temurin.17.JDK
+  category: Runtimes
+
+- name: DirectX End-User Runtime Web Installer
+  description: The Microsoft DirectX® End-User Runtime installs a number of runtime libraries from the legacy DirectX SDK for some games that use D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3, XACT, and/or Managed DirectX 1.1. Note that this package does not modify the DirectX Runtime installed on your Windows OS in any way.
+  package_manager: winget
+  package_name: Microsoft.DirectX
+  category: Runtimes
+
+
+# Security
+
+- name: Authme
+  description: Authme is a two-factor authentication app, you can import from QR codes or Google Authenticator QR codes.
+  package_manager: winget
+  package_name: Levminer.Authme
+  category: Security
+
+- name: Authy Desktop
+  description: Authy brings the future of strong authentication to the convenience of your Desktop. The Authy app generates secure 2 step verification tokens on your device. It helps you protect your account from hackers and hijackers by adding an additional layer of security.
+  package_manager: winget
+  package_name: Twilio.Authy
+  category: Security
+
+- name: 2fast
+  description: 2fast (acronym for two factor authenticator supporting TOTP) is the first free, open source, two factor authenticator for Windows and Android with the ability to store the sensitive data encrypted at a place of your choice instead of a 3rd party cloud location.
+  package_manager: choco
+  package_name: 2fast
+  category: Security
+
+- name: YubiKey Manager
+  description: Official tool to configure FIDO2, OTP and PIV functionality on your YubiKey
+  package_manager: winget
+  package_name: Yubico.YubikeyManager
+  category: Security
+
+- name: Yubico Authenticator
+  description: Authenticator to generate 2-step verification codes using your YubiKey
+  package_manager: winget
+  package_name: Yubico.Authenticator
+  category: Security
+
+- name: Bitwarden
+  description: A secure and free password manager for all of your devices.
+  package_manager: winget
+  package_name: Bitwarden.Bitwarden
+  category: Security
+
+- name: KeePass
+  description: KeePass Password Safe is a free, open source, lightweight, and easy-to-use password manager for Windows, Linux and Mac OS X, with ports for Android, iPhone/iPad and other mobile devices. With so many passwords to remember and the need to vary passwords to protect your valuable data, it’s nice to have KeePass to manage your passwords in a secure way. KeePass puts all your passwords in a highly encrypted database and locks them with one master key or a key file. As a result, you only have to remember one single master password or select the key file to unlock the whole database. And the databases are encrypted using the best and most secure encryption algorithms currently known, AES and Twofish. See our features page for details.
+  package_manager: winget
+  package_name: DominikReichl.KeePass
+  category: Security
+
+- name: KeePassXC
+  description: KeePassXC is a cross-platform password manager that allows you to store all of your passwords in one location. A password manager is a tool that creates and stores passwords for you, so you can use many different passwords on different sites and services without having to memorize them.
+  package_manager: winget
+  package_name: KeePassXCTeam.KeePassXC
+  category: Security
+
+- name: Password Safe
+  description: Password Safe is a password database utility. Like many other such products, commercial and otherwise, it stores your passwords in an encrypted file, allowing you to remember only one password (the "safe combination"), instead of all the username/password combinations that you use.
+  package_manager: winget
+  package_name: RonyShapiro.PasswordSafe
+  category: Security
+
+- name: Dashlane
+  description: Dashlane is a cross-platform subscription-based password manager and digital wallet application available on macOS, Windows, iOS and Android. Dashlane uses a freemium pricing model which includes both a free tier and a premium subscription.
+  package_manager: winget
+  package_name: Dashlane.Dashlane
+  category: Security
+
+- name: Panda Free Antivirus
+  description: Secure 100% virus detection ratio* with minimal device impact. Stay protected at all times with free, up-to-the-minute updates. Easy Install and forget Forget about product updates and complicated settings. Simply install the product and enjoy your digital life worry free. Light All the work is done *from the cloud. You won't notice it's there! (but it is) And with no need to store files or perform daily updates!
+  package_manager: choco
+  package_name: pandafreeantivirus
+  category: Security
+
+- name: AdwCleaner
+  description: Free Adware Cleaner & Removal tool
+  package_manager: scoop
+  package_name: adwcleaner
+  category: Security
+
+# Media
 
 vlc
 cider
@@ -383,6 +488,8 @@ photogimp
 upscayl
 imageglass
 
+# Utilities
+
 winzip
 flameshot
 notepad plus plus
@@ -393,7 +500,6 @@ trello desktop
 sevenzip
 sublime text
 evernote
-        
 notion
 winrar
 visual studio code

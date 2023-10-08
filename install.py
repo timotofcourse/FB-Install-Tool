@@ -1,26 +1,28 @@
-import update
 import tkinter # Needed to use customtkinter
 import customtkinter
 import os
 from PIL import Image
+import threading
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
 
 # Check for configuration file and import the apps
 
+def import_winget_list():
+    if os.path.exists('wingetlist.json'):
+        winstall = os.system('winget import wingetlist.json')
+        winstall.read()
 
-if os.path.exists('wingetlist.json'):
-    winstall = os.popen('winget import wingetlist.json')
-    winstall.read()
+def import_scoop_list():
+    if os.path.exists('scooplist.json'):
+        scinstall = os.system('scoop import scooplist.json')    
+        scinstall.read()
 
-if os.path.exists('scooplist.json'):
-    scinstall = os.popen('scoop import scooplist.json')    
-    scinstall.read()
-
-if os.path.exists('chocolist.config'):
-    chocoinstall = os.popen('powershell start-process choco install chocolist.config -verb runas')
-    chocoinstall.read()
+def import_choco_list():
+    if os.path.exists('chocolist.config'):
+        chocoinstall = os.system('powershell start-process choco install chocolist.config -verb runas')
+        chocoinstall.read()
 
 # Run an update before running the tool. This is usefull because previous imported lists may be outdated because it may have been some time that someone imported ant list or installed something
 
@@ -42,136 +44,6 @@ class App(customtkinter.CTk):
         # load images with light and dark mode image
 
         self.logo_image = customtkinter.CTkLabel(master=self, text="FB Install Tool")
-        
-        # Variables for the checkboxes
-        
-        self.check_brave_browser = customtkinter.IntVar()
-        self.check_microsoft_edge = customtkinter.IntVar()
-        self.check_k_meleon = customtkinter.IntVar()
-        self.check_google_chrome = customtkinter.IntVar()
-        self.check_vivaldi = customtkinter.IntVar()
-        self.check_opera = customtkinter.IntVar()
-        self.check_mozilla_firefox = customtkinter.IntVar()
-        self.check_librewolf = customtkinter.IntVar()
-        self.check_pale_moon = customtkinter.IntVar()
-        self.check_waterfox = customtkinter.IntVar()
-        self.check_midori = customtkinter.IntVar()
-        self.check_opera_gx = customtkinter.IntVar()
-        
-        self.check_retroarch = customtkinter.IntVar()
-        self.check_amazon_games = customtkinter.IntVar()
-        self.check_ubisoft_connect = customtkinter.IntVar()
-        self.check_dolphin = customtkinter.IntVar()
-        self.check_rpcs3 = customtkinter.IntVar()
-        self.check_epic_games_launcher = customtkinter.IntVar()
-        self.check_pcsx2 = customtkinter.IntVar()
-        self.check_yuzu = customtkinter.IntVar()
-        self.check_heroic_games_launcher = customtkinter.IntVar()
-        self.check_gog_galaxy = customtkinter.IntVar()
-        self.check_itch_io = customtkinter.IntVar()
-        self.check_minecraft_launcher = customtkinter.IntVar()
-        self.check_steam = customtkinter.IntVar()
-        self.check_ea_app = customtkinter.IntVar()
-        self.check_gdlauncher = customtkinter.IntVar()
-        self.check_curseforge = customtkinter.IntVar()
-        self.check_battle_net = customtkinter.IntVar()
-        self.check_citra = customtkinter.IntVar()
-        self.check_ppsspp = customtkinter.IntVar()
-        self.check_blitz = customtkinter.IntVar()
-        self.check_playnite = customtkinter.IntVar()
-        
-        self.check_zoom = customtkinter.IntVar()
-        self.check_guilded = customtkinter.IntVar()
-        self.check_slack = customtkinter.IntVar()
-        self.check_hexchat = customtkinter.IntVar()
-        self.check_skype = customtkinter.IntVar()
-        self.check_discord = customtkinter.IntVar()
-        self.check_teamspeak = customtkinter.IntVar()
-        self.check_telegram = customtkinter.IntVar()
-        self.check_whatsapp = customtkinter.IntVar()
-        self.check_viber = customtkinter.IntVar()
-        self.check_microsoft_teams = customtkinter.IntVar()
-        self.check_signal = customtkinter.IntVar()
-        
-        self.check_sedja_pdf = customtkinter.IntVar()
-        self.check_sumatra_pdf = customtkinter.IntVar()
-        self.check_adobe_reader = customtkinter.IntVar()
-        self.check_wps_office = customtkinter.IntVar()
-        self.check_masterpdf = customtkinter.IntVar()
-        self.check_foxit_reader = customtkinter.IntVar()
-        self.check_libreoffice = customtkinter.IntVar()
-        self.check_openoffice = customtkinter.IntVar()
-        self.check_kingsoft_office = customtkinter.IntVar()
-        self.check_freeoffice = customtkinter.IntVar()
-        self.check_onlyoffice = customtkinter.IntVar()
-        self.check_microsoft_office = customtkinter.IntVar()
-        
-        self.check_vcredist = customtkinter.IntVar()
-        self.check_dotnet = customtkinter.IntVar()
-        self.check_java = customtkinter.IntVar()
-        self.check_openjdk = customtkinter.IntVar()
-        self.check_openjdk8 = customtkinter.IntVar()
-        self.check_directx = customtkinter.IntVar()
-        
-        self.check_authme = customtkinter.IntVar()
-        self.check_authy = customtkinter.IntVar()
-        self.check_passwordhub = customtkinter.IntVar()
-        self.check_toofast = customtkinter.IntVar()
-        self.check_yubico = customtkinter.IntVar()
-        self.check_bitwarden = customtkinter.IntVar()
-        self.check_keepass = customtkinter.IntVar()
-        self.check_paswordsafe = customtkinter.IntVar()
-        self.check_dashlane = customtkinter.IntVar()
-        self.check_panda = customtkinter.IntVar()
-        self.check_adw_cleaner = customtkinter.IntVar()
-        self.check_calmav = customtkinter.IntVar()
-        
-        self.check_vlc = customtkinter.IntVar()
-        self.check_cider = customtkinter.IntVar()
-        self.check_gom_player = customtkinter.IntVar()
-        self.check_wondershare_filmora = customtkinter.IntVar()
-        self.check_tidal = customtkinter.IntVar()
-        self.check_audacium = customtkinter.IntVar()
-        self.check_mypaint = customtkinter.IntVar()
-        self.check_audacity = customtkinter.IntVar()
-        self.check_deezer = customtkinter.IntVar()
-        self.check_spotify = customtkinter.IntVar()
-        self.check_itunes = customtkinter.IntVar()
-        self.check_clementine = customtkinter.IntVar()
-        self.check_handbrake = customtkinter.IntVar()
-        self.check_kdenlive = customtkinter.IntVar()
-        self.check_mpv = customtkinter.IntVar()
-        self.check_pot_player = customtkinter.IntVar()
-        self.check_paint_dot_net = customtkinter.IntVar()
-        self.check_krita = customtkinter.IntVar()
-        self.check_tuxpaint = customtkinter.IntVar()
-        self.check_gimp = customtkinter.IntVar()
-        self.check_glimpse = customtkinter.IntVar()
-        self.check_photogimp = customtkinter.IntVar()
-        self.check_upscayl = customtkinter.IntVar()
-        self.check_imageglass = customtkinter.IntVar()
-        
-        self.check_winzip = customtkinter.IntVar()
-        self.check_flameshot = customtkinter.IntVar()
-        self.check_notepad_plus_plus = customtkinter.IntVar()
-        self.check_peazip = customtkinter.IntVar()
-        self.check_atom = customtkinter.IntVar()
-        self.check_sharex = customtkinter.IntVar()
-        self.check_trello = customtkinter.IntVar()
-        self.check_sevenzip = customtkinter.IntVar()
-        self.check_sublime_text = customtkinter.IntVar()
-        self.check_evernote = customtkinter.IntVar()
-        self.check_notion = customtkinter.IntVar()
-        self.check_winrar = customtkinter.IntVar()
-        self.check_visual_studio_code = customtkinter.IntVar()
-        self.check_imgburn = customtkinter.IntVar()
-        self.check_powertoys = customtkinter.IntVar()
-        self.check_sysinternals_suite = customtkinter.IntVar()
-        self.check_teracopy = customtkinter.IntVar()
-        self.check_adb = customtkinter.IntVar()
-        self.check_flow = customtkinter.IntVar()
-        self.check_adguard = customtkinter.IntVar()
-        
 
         # create navigation frame
 
@@ -667,7 +539,7 @@ class App(customtkinter.CTk):
 
     def change_appearance_mode_event(self, new_appearance_mode):
         customtkinter.set_appearance_mode(new_appearance_mode)
-        
+    
     # Instalation functions for the packages in all frames
     
     def install_browser_packages(self):
