@@ -1,0 +1,407 @@
+#  This is where the apps that should be in the application should be declarated
+
+# This template is here to help me keep things organized:
+
+# - name: App 1
+#   description: Description 1
+#   package_manager: winget
+#   package_name: app1-package
+#   category: Category A
+
+# Let's keep things somewhat organized 
+
+# Browsers
+
+- name: Brave
+  description: The new Brave browser blocks ads and trackers that slow you down and invade your privacy. Discover a new way of thinking about how the web can work.
+  package_manager: winget
+  package_name: Brave.Brave
+  category: Browsers
+
+- name: Microsoft Edge
+  description: World-class performance with more privacy, more productivity, and more value while you browse.
+  package_manager: winget
+  package_name: Microsoft.Edge
+  category: Browsers
+
+- name: K-Meleon
+  description: K-Meleon is a very lightweight and fast browser based on Mozilla Gecko.
+  package_manager: winget
+  package_name: kmeleonbrowser.K-Meleon
+  category: Browsers
+
+- name: Google Chrome
+  description: A more simple, secure, and faster web browser than ever, with Google smarts built-in.
+  package_manager: winget
+  package_name: Google.Chrome
+  category: Browsers
+
+- name: Vivaldi
+  description: The new Vivaldi browser protects you from trackers, blocks unwanted ads, and puts you in control with unique built-in features. Get Vivaldi and browse fast.
+  package_manager: winget
+  package_name: VivaldiTechnologies.Vivaldi
+  category: Browsers
+
+- name: Opera
+  description: Opera is a multi-platform web browser developed by Opera Software. Opera is a Chromium-based browser. It distinguishes itself from other browsers through its user interface, functionality, and other features.
+  package_manager: winget
+  package_name: Opera.Opera
+  category: Browsers
+
+- name: Opera GX
+  description: Opera GX is a special version of the Opera browser which, on top of Opera’s great features for privacy, security and efficiency, includes special features designed to complement gaming.
+  package_manager: winget
+  package_name: Opera.OperaGX
+  category: Browsers
+
+- name: Mozilla Firefox
+  description: Firefox Browser, also known as Mozilla Firefox or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation and its subsidiary, the Mozilla Corporation. Firefox uses the Gecko layout engine to render web pages, which implements current and anticipated web standards. In 2017, Firefox began incorporating new technology under the code name Quantum to promote parallelism and a more intuitive user interface. Firefox is officially available for Windows 7 or newer, macOS, and Linux. Its unofficial ports are available for various Unix and Unix-like operating systems including FreeBSD, OpenBSD, NetBSD, illumos, and Solaris Unix.
+  package_manager: winget
+  package_name: Mozilla.Firefox
+  category: Browsers
+
+- name: Librewolf
+  description: LibreWolf is designed to minimize data collection and telemetry as much as possible. This is achieved through hundreds of privacy/security/performance settings and patches. Intrusive integrated addons including updater, crashreporter, and pocket are removed too.
+  package_manager: winget
+  package_name: LibreWolf.LibreWolf
+  category: Browsers
+
+- name: Pale Moon
+  description: Pale Moon is an Open Source, Goanna-based web browser available for Microsoft Windows and Linux (with other operating systems in development), focusing on efficiency and ease of use. Pale Moon offers you a browsing experience in a browser completely built from its own, independently developed source that has been forked off from Firefox/Mozilla code a number of years ago, with carefully selected features and optimizations to improve the browser's stability and user experience, while offering full customization and a growing collection of extensions and themes to make the browser truly your own.
+  package_manager: winget
+  package_name: MoonchildProductions.PaleMoon
+  category: Browsers
+
+- name: Waterfox
+  description: Waterfox is free and open source browser, based on Mozilla Firefox.
+  package_manager: winget
+  package_name: Waterfox.Waterfox
+  category: Browsers
+
+- name: Midori
+  description: A lightweight, fast, and free web browser.
+  package_manager: choco
+  package_name: midori-browser
+  category: Browsers
+
+# Games
+
+- name: Retroarch
+  description: RetroArch is a frontend for emulators, game engines and media players. It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. In addition to this, you are able to run original game discs (CDs) from RetroArch. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, machine translation, blind accessibility features, and more!
+  package_manager: winget
+  package_name: Libretro.RetroArch
+  category: Games
+
+- name: Amazon Games
+  description: Amazon Games app is a Windows PC game launcher that allows you to claim, download, and play new and classic Windows PC games every month from Prime Gaming.
+  package_manager: winget
+  package_name: Amazon.Games
+  category: Games
+
+- name: Ubisoft Connect
+  description: Ubisoft Connect is the ecosystem of players services for Ubisoft games across all platforms. It aims at giving the best environment for all players to enjoy their games and connect with each other whatever the device.
+  package_manager: winget
+  package_name: Ubisoft.Connect
+  category: Games
+
+- name: Dolphin Emulator
+  description: Dolphin is an emulator for two recent Nintendo video game consoles the GameCube and the Wii. It allows PC gamers to enjoy games for these two consoles in full HD (1080p) with several enhancements compatibility with all PC controllers, turbo speed, networked multiplayer, and even more!
+  package_manager: winget
+  package_name: DolphinEmulator.Dolphin
+  category: Games
+
+- name: Epic Games Launcher
+  description: The Epic Games Launcher is how you obtain the Unreal Game Engine, modding tools and other Epic Games like Fortnite and the new Epic Games Store.
+  package_manager: winget
+  package_name: EpicGames.EpicGamesLauncher
+  category: Games
+
+- name: Heroic Games Launcher
+  description: Heroic is an Open Source Game Launcher for Linux, Windows (Beta) and MacOS (Limited to Windows games using Wine/Crossover). Right now it supports launching games from the Epic Games Store using Legendary, a CLI alternative to the Epic Games Launcher. Heroic is built with Web Technologies like TypeScript, React, NodeJS and Electron.
+  package_manager: winget
+  package_name: HeroicGamesLauncher.HeroicGamesLauncher
+  category: Games
+
+- name: GOG Galaxy
+  description: GOG GALAXY 2.0 allows you to combine multiple game libraries into one and connect with your friends across all gaming platforms, consoles included!
+  package_manager: winget
+  package_name: GOG.Galaxy
+  category: Games
+
+- name: Itch.IO
+  description: The itch.io app, itch, lets you effortlessly download and run games and software from itch.io. All of your downloads are kept in a single place and are automatically updated. Access your collections and purchases, or browse for new games via the in-app browser.
+  package_manager: winget
+  package_name: ItchIo.Itch
+  category: Games
+
+- name: Minecraft Launcher
+  description: Explore your own unique world, survive the night, and create anything you can imagine!
+  package_manager: winget
+  package_name: Mojang.MinecraftLauncher
+  category: Games
+
+- name: Steam
+  description: Steam is a digital distribution platform developed by Valve Corporation for purchasing and playing video games. Steam offers digital rights management, matchmaking servers, video streaming, and social networking services.
+  package_manager: winget
+  package_name: Valve.Steam
+  category: Games
+
+- name: EA App
+  description: Built on feedback from players like you, the EA Desktop app is the newest iteration of our PC platform. The beta includes new features and overall improvements to power a faster, smarter, more connected desktop app.
+  package_manager: winget
+  package_name: ElectronicArts.EADesktop
+  category: Games
+
+- name: GDLauncher
+  description: GDLauncher is a custom open-source Minecraft launcher written from the ground up in electron/react. Its main goal is to make it easy and enjoyable to manage different Minecraft versions and install forge/fabric, bringing the playing and modding experience to the next level!
+  package_manager: winget
+  package_name: GorillaDevs.GDLauncher
+  category: Games
+
+- name: CurseForge
+  description: Download and manage your addons and mods with the CurseForge app!
+  package_manager: winget
+  package_name: Overwolf.CurseForge
+  category: Games
+
+- name: PPSSPP
+  description: PPSSPP can run your PSP games on your PC in full HD resolution; it can even upscale textures that would otherwise be too blurry as they were made for the small screen of the original PSP
+  package_manager: winget
+  package_name: PPSSPPTeam.PPSSPP
+  category: Games
+
+- name: Blitz
+  description: Blitz App - Your personal gaming coach
+  package_manager: winget
+  package_name: Blitz.Blitz
+  category: Games
+
+- name: Playnite
+  description: An open source video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Origin, Battle.net and Uplay. Includes game emulation support, providing one unified interface for your games.
+  package_manager: winget
+  package_name: Playnite.Playnite
+  category: Games
+
+- name: RPCS3
+  description: Open-source Sony PlayStation 3 emulator
+  package_manager: scoop
+  package_name: rpcs3
+  category: Games
+
+# Comunication
+
+- name: Zoom
+  description: Zoom's secure, reliable video platform powers all of your communication needs, including meetings, chat, phone, webinars, and online events.
+  package_manager: winget
+  package_name: Zoom.Zoom
+  category: Games
+
+- name: Guilded
+  description: Guilded upgrades your group chat and equips your server with integrated event calendars, forums, and more 100% free.
+  package_manager: winget
+  package_name: Guilded.Guilded
+  category: Games
+
+- name: Slack
+  description: Slack is a collaboration hub for work, no matter what work you do. It's a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.
+  package_manager: winget
+  package_name: SlackTechnologies.Slack
+  category: Games
+
+- name: HexChat
+  description: HexChat is an open source, feature-rich, multi-network IRC client based on XChat. It offers a wide range of features, including Python/Perl scripting, spellcheck, proxies, SASL, DCC support. With an easy to use interface, it offers a great method of chatting online.
+  package_manager: winget
+  package_name: hexchat
+  category: Games
+
+- name: skype
+  description: Skype - Install Skype, add your friends as contacts, then call, video call and instant message with them for free. Call people who aren"t on Skype too, at really low rates.
+  package_manager: winget
+  package_name: Microsoft.Skype
+  category: Games
+
+- name: Discord
+  description: Whether you’re part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, Discord makes it easy to talk every day and hang out more often.
+  package_manager: winget
+  package_name: Discord.Discord
+  category: Games
+
+- name: TeamSpeak3
+  description: Use crystal clear sound to communicate with your team mates cross-platform with military-grade security, lag-free performance & unparalleled reliability and uptime.
+  package_manager: winget
+  package_name: TeamSpeakSystems.TeamSpeakClient
+  category: Games
+
+- name: Telegram Desktop
+  description: Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+  package_manager: winget
+  package_name: Telegram.TelegramDesktop
+  category: Games
+
+- name: WhatsApp Desktop
+  description: WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform centralized messaging and voice-over-IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other content.
+  package_manager: winget
+  package_name: WhatsApp.WhatsApp
+  category: Games
+
+- name: Viber
+  description: Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
+  package_manager: winget
+  package_name: Viber.Viber
+  category: Games
+
+- name: Microsoft Teams
+  description: Make amazing things happen together at home, work, and school.
+  package_manager: winget
+  package_name: Microsoft.Teams
+  category: Games
+
+- name: Signal
+  description: Signal is an encrypted communications application. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos, and make one-to-one voice and video calls.
+  package_manager: winget
+  package_name: OpenWhisperSystems.Signal
+  category: Games
+
+# Office
+
+- name: SumatraPDF
+  description: Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) viewer for Windows. Sumatra PDF is powerful, small, portable and starts up very fast. Simplicity of the user interface has a high priority.
+  package_manager: winget
+  package_name: SumatraPDF.SumatraPDF
+  category: Office
+
+- name: Adobe Acrobat Reader DC
+  description: Adobe Acrobat Reader DC software is the free, trusted global standard for viewing, printing, signing, sharing, and annotating PDFs. It's the only PDF viewer that can open and interact with all types of PDF content including forms and multimedia.
+  package_manager: winget
+  package_name: Adobe.Acrobat.Reader.32-bit
+  category: Office
+
+- name: WPS Office
+  description: WPS Office is a one-stop office service platform compatible with Word, Excel and PowerPoint. It supports PDF document editing and format conversion, and integrates features such as mind map, flowchart and form.
+  package_manager: winget
+  package_name: Kingsoft.WPSOffice.CN
+  category: Office
+
+- name: Master PDF Editor
+  description: Master PDF Editor is straightforward, easy to use application for working with PDF documents equipped with powerful multi-purpose functionality. With Master PDF Editor you can easily view, create and modify PDF documents. The application enables you to merge several files into one, split a source document into multiple documents, and also to comment, sign and encrypt PDF files.
+  package_manager: winget
+  package_name: CodeIndustry.MasterPdfEditor
+  category: Office
+
+- name: Foxit PDF Reader
+  description: Foxit is a powerful PDF reader for viewing, filling out forms and more.
+  package_manager: winget
+  package_name: Foxit.FoxitReader
+  category: Office
+
+- name: Foxit PDF Editor
+  description: PhantomPDF is the PDF Editor that enables PDF document accessibility for people with disabilities who use assistive technology to have access to information.
+  package_manager: winget
+  package_name: Foxit.PhantomPDF
+  category: Office
+
+- name: LibreOffice
+  description: LibreOffice is a free and powerful office suite, and a successor to OpenOffice.org (commonly known as OpenOffice). Its clean interface and feature-rich tools help you unleash your creativity and enhance your productivity.
+  package_manager: winget
+  package_name: TheDocumentFoundation.LibreOffice
+  category: Office
+
+- name: OpenOffice
+  description: Apache OpenOffice is the leading open-source office software suite for word processing, spreadsheets, presentations, graphics, databases and more. It is available in many languages and works on all common computers. It stores all your data in an international open standard format and can also read and write files from other common office software packages. It can be downloaded and used completely free of charge for any purpose.
+  package_manager: winget
+  package_name: Apache.OpenOffice
+  category: Office
+
+- name: Kingsoft Office
+  description: Kingsoft Office Suite Free 2013 is a free office suite, which includes free word processor, spreadsheet program and presentation maker. These three programs help you deal with office tasks with ease Writer Efficient word processor; Presentation Multimedia presentations creator; Spreadsheets Powerful tool for data processing and data analysis Although it is a free suite, Kingsoft Office comes with many innovative features, including a paragraph adjustment tool, and multiple tabbed feature. It also has Office to PDF converter, automatic spell checking and word count features. In this latest version, new features such as watermark in document, and converting PowerPoint to Word documents are also supported.
+  package_manager: choco
+  package_name: kingsoft-office-free
+  category: Office
+
+- name: SoftMaker FreeOffice
+  description: The best free alternative to Microsoft Office.
+  package_manager: winget
+  package_name: SoftMaker.FreeOffice.2021
+  category: Office
+
+- name: ONLYOFFICE Desktop
+  description: Create, view and edit text documents, spreadsheets and presentations of any size and complexity. Work on documents of most popular formats; DOCX, ODT, XLSX, ODS, CSV, PPTX, ODP, etc. Deal with multiple files within one and the same window thanks to the tab-based user interface.
+  package_manager: winget
+  package_name: ONLYOFFICE.DesktopEditors
+  category: Office
+
+- name: Microsoft Office
+  description: Get the latest versions of your familiar Office programs, such as Word, Excel and PowerPoint, and more, all in one convenient subscription. This will download and silently install the entire Office 365 Home Premium Retail edition. A license is required and you will be prompted to enter your account information upon first launching the software after install.
+  package_manager: choco
+  package_name: choco install office365homepremium
+  category: Office
+
+# Runtimes
+
+vcredist
+donet
+java
+openjdk
+openjdk 8
+directx standalone
+
+authme
+authy
+passwordhub
+toofast
+yubico
+bitwarden
+keepass
+passwordsafe
+dashlane
+panda
+adw cleaner
+calmav
+
+vlc
+cider
+gom player
+filmora
+tidal
+audacium
+mypaint
+audacity
+deezer
+spotify
+itunes
+clementine
+handbrake
+kdenlive
+mpv
+pot player
+paint dot net
+krita
+tuxpaint
+gimp
+glimpse
+photogimp
+upscayl
+imageglass
+
+winzip
+flameshot
+notepad plus plus
+peazip
+atom
+sharex
+trello desktop
+sevenzip
+sublime text
+evernote
+        
+notion
+winrar
+visual studio code
+imgburn
+powertoys
+sysinternals suite
+teracopy
+adb platform tools
+flow launcher
+adguard
+
