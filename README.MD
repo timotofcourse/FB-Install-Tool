@@ -13,6 +13,10 @@ This software is not tested yet and this are very early code that i don't even k
 
 - Testing builds for Windows now available (expect most of them to not work at all)
 
+## Minimum Windows Version
+
+This tool supports only Windows 10 22h2 or later
+
 ## Dependencies
 
 This tool tries to install all the things needed to work but anyway this are de dependencies
@@ -20,19 +24,6 @@ This tool tries to install all the things needed to work but anyway this are de 
 - Scoop (Commands in install instructions)
 - Chocolatey (Commands in install instructions)
 - Winget (Will be installed automatically as a dependency)
-
-## Why Python?
-
-Because i like python and it's easy
-
-## Tkinter
-
-Tkinter is a basic Graphical User Interface builder for python and i used it for some error messages and information boxes.
-
-## CustomTkinter
-
-With CustomTkinter you can create modern looking user interfaces in python with tkinter. CustomTkinter is a tkinter extension which provides extra ui-elements like the CTkButton, which can be used like a normal tkinter.Button, but can be customized with a border and round edges.
-
 
 ## Scoop
 
@@ -55,52 +46,10 @@ Windows Package Manager winget command-line tool is bundled with Windows 11 and 
 
 If you are running an earlier version of Windows and the App Installer is not installed, you can get App Installer from the Microsoft Store. If it's already installed, make sure it is updated with the latest version.
 
-### Microsoft prevented scripts for installing winget automatically so you just need to update your Application Installer from the store to get winget working. 
-
-## How to Download and update this tool (Windows)
+## How to Download and update this tool
 
 - You can download it directly here and install each version (Please only install stable releases)
-- You can add my scoop bucket to your Windows and download it with scoop that will be easier to update. (Only stable releases will be availabe)
-
-<!-- 
-
-### Install Scoop
-
-```
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
-
-```
-
-### Install Chocolatey
-
-```
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-```
-
-### Install Git
-
-```
-scoop install git
-
-```
-
-### Add my scoop bucket
-
-```
-scoop bucket add filmabem https://github.com/FilmaBem2/applications.git
-
-```
-
-### Install FB-Install-Tool
-
-```
-scoop install fb-install-tool
-
-``` -->
-
 
 ### Pre-configuration
 
-You can configure all the packages you want to install in the 'windowspackages.json' in the list that corresponds to the package managers it is available (use the template from this repo. The file is not shipped by default, if the file exists the ui will not be loaded)
+You can configure all the packages you want to install in the 'apps.yaml' in the list that corresponds to the package managers it is available (use the template from this repo. The file is not shipped by default, if the file exists the ui will not be loaded)
