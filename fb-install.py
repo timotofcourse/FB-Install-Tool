@@ -16,7 +16,7 @@ def check_windows_version():
 
     windows_version_info = platform.win32_ver()
     windows_version = windows_version_info[0]
-    return windows_version >= '10.0.19044'
+    return windows_version >= '10'
 
 # Check if package managers are installed and if not install them
 
@@ -39,26 +39,26 @@ if check_package_manager('scoop') == False:
 # I need to make separate functions to be used in diffrent threads but it's not a big deal
 
 
-def scoop_packages_upgrade():
-    os.system('scoop update *')
+# def scoop_packages_upgrade():
+#     os.system('scoop update *')
 
-def choco_packages_upgrade():
-    os.system('powershll start-process choco upgrade all -verb runas')
+# def choco_packages_upgrade():
+#     os.system('powershell start-process choco upgrade all -verb runas')
 
-def winget_packages_upgrade():
-    os.system('winget update --all')
+# def winget_packages_upgrade():
+#     os.system('winget update --all')
 
-scoop_packages_to_update = threading.Thread(target=scoop_packages_upgrade)
-choco_packages_to_update = threading.Thread(target=choco_packages_upgrade)
-winget_packages_to_update = threading.Thread(target=winget_packages_upgrade)
+# scoop_packages_to_update = threading.Thread(target=scoop_packages_upgrade)
+# choco_packages_to_update = threading.Thread(target=choco_packages_upgrade)
+# winget_packages_to_update = threading.Thread(target=winget_packages_upgrade)
 
-scoop_packages_to_update.start()
-choco_packages_to_update.start()
-winget_packages_to_update.start()
+# scoop_packages_to_update.start()
+# choco_packages_to_update.start()
+# winget_packages_to_update.start()
 
-scoop_packages_to_update.join()
-choco_packages_to_update.join()
-winget_packages_to_update.join()
+# scoop_packages_to_update.join()
+# choco_packages_to_update.join()
+# winget_packages_to_update.join()
 
 # Read the data.yml file to use in this app
 
