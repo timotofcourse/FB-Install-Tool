@@ -1,0 +1,7 @@
+# This is where the users can declarate which apps they want this tool to install and it will install them (only apps that are already supported)
+
+
+# Folow this example to select what apps to install
+
+# - name: Brave
+#   install: True
