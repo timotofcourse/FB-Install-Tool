@@ -69,8 +69,10 @@ with open('data.yml', 'r', encoding='utf-8') as yaml_file:
 # Window properties
 
 window = customtkinter.CTk()
-window.geometry('1200x800')
+window.geometry('1200x500')
 window.resizable(False, False)
+window.title('FB Install Tool')
+window.iconbitmap('icon.ico')
 
 # Dictionaries to use in the app
 
@@ -177,11 +179,4 @@ install_button.pack(side=tkinter.BOTTOM, fill=tkinter.X)
 
 # Launch App
 
-if check_windows_version():
-
-    print('Windows 10 22h2 or newer detected. Launching...')
-    window.mainloop()
-
-else:
-
-    print("Not possible to launch, update your Windows instalation")
+window.mainloop()
