@@ -9,6 +9,9 @@ This is just another graphical front-end for package managers but only uses pre-
 - Re-Design the Interface of my previous tool
 - Try to improve this tool over time
 
+![Light Mode](screenshots/light_mode.png)
+![Dark Mode](screenshots/dark_mode.png)
+
 ## Minimum Windows Version
 
 This tool supports only Windows 10 or later
