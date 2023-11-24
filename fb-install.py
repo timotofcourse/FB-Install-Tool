@@ -1,11 +1,13 @@
 import tkinter # Needed to use customtkinter
 import customtkinter
+import CTkMessagebox
 import os
 from PIL import Image
 import threading
 import platform
 import shutil
 from ruamel.yaml import YAML
+import sys
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
@@ -21,18 +23,9 @@ def check_windows_version():
 # Check if package managers are installed and if not install them
 
 def check_package_manager(package_manager_name):
+
     return shutil.which(package_manager_name) is not None
 
-if check_package_manager('winget') == False:
-    os.system('curl -o "%TEMP%\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle" -LO https://github.com/microsoft/winget-cli/releases/latest/download/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle')
-    os.system('Add-AppxPackage -Path "%TEMP%\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle"')
-
-if check_package_manager('choco') == False:
-    os.system("powershell start-process Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) -verb runas")
-
-if check_package_manager('scoop') == False:
-    os.system('powershell start-process Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -verb runas')
-    os.system('irm get.scoop.sh | iex')
 
 
 # Update packages with package managers before doing anything else, i'm going to multi thread this to save some time
@@ -43,7 +36,7 @@ if check_package_manager('scoop') == False:
 #     os.system('scoop update *')
 
 # def choco_packages_upgrade():
-#     os.system('powershell start-process choco upgrade all -verb runas')
+#     os.system('choco upgrade all')
 
 # def winget_packages_upgrade():
 #     os.system('winget update --all')
@@ -80,6 +73,21 @@ category_frames = {}
 checkboxes = {}
 category_buttons = {}
 
+if check_package_manager('winget') == False:
+
+    CTkMessagebox.CTkMessagebox(title="Error", message="Winget not found! \nPlease install it before running this!", icon="cancel")
+    sys.exit(1)
+
+if check_package_manager('choco') == False:
+
+    CTkMessagebox.CTkMessagebox(title="Error", message="Chocolatey not found! \nPlease install it before running this!", icon="cancel")
+    sys.exit(1)
+
+if check_package_manager('scoop') == False:
+
+    CTkMessagebox.CTkMessagebox(title="Error", message="Scoop not found! \nPlease install it before running this!", icon="cancel")
+    sys.exit(1)
+
 # Function to install packages
 
 def install_selected_apps():
@@ -98,15 +106,34 @@ def install_selected_apps():
 
             if package_manager == 'winget':
 
-                os.system(['winget', 'install', '-e', package_name])
+                try:
+
+                    os.system(f'winget install -e {package_name} --accept-source-agreements')
+
+                except Exception as e:
+                   
+                   CTkMessagebox.CTkMessagebox(title='Error', message=f'An error occurred: {e}', icon='cancel') 
 
             elif package_manager == 'choco':
 
-                os.system(['powershell', 'start-process', 'choco', 'install', package_name, '-verb', 'runas'])
+                try:
+
+                    os.system(f'choco install {package_name} -y')
+
+                except Exception as e:
+                   
+                   CTkMessagebox.CTkMessagebox(title='Error', message=f'An error occurred: {e}', icon='cancel') 
+
 
             elif package_manager == 'scoop':
 
-                os.system(['scoop', 'install', package_name])
+                try:
+
+                    os.system(f'scoop install {package_name}')
+
+                except Exception as e:
+                   
+                   CTkMessagebox.CTkMessagebox(title='Error', message=f'An error occurred: {e}', icon='cancel') 
 
 # Set the frame to change the main frames
  
@@ -174,6 +201,7 @@ first_category = list(category_frames.keys())[0]
 category_frames[first_category].pack()
 
 # Create an "Install Selected Apps" button and place it in the bottom of the left frame
+
 install_button = customtkinter.CTkButton(left_frame, text="Install Selected Apps", command=install_selected_apps)
 install_button.pack(side=tkinter.BOTTOM, fill=tkinter.X)
 
