@@ -238,36 +238,6 @@
   package_name: TeamSpeakSystems.TeamSpeakClient
   category: Games
 
-- name: Telegram Desktop
-  description: Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
-  package_manager: winget
-  package_name: Telegram.TelegramDesktop
-  category: Games
-
-- name: WhatsApp Desktop
-  description: WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform centralized messaging and voice-over-IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other content.
-  package_manager: winget
-  package_name: WhatsApp.WhatsApp
-  category: Games
-
-- name: Viber
-  description: Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
-  package_manager: winget
-  package_name: Viber.Viber
-  category: Games
-
-- name: Microsoft Teams
-  description: Make amazing things happen together at home, work, and school.
-  package_manager: winget
-  package_name: Microsoft.Teams
-  category: Games
-
-- name: Signal
-  description: Signal is an encrypted communications application. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos, and make one-to-one voice and video calls.
-  package_manager: winget
-  package_name: OpenWhisperSystems.Signal
-  category: Games
-
 # Office
 
 - name: SumatraPDF
@@ -730,4 +700,32 @@
   package_name: AdGuard.AdGuard
   category: Utilities
 
+- name: Telegram Desktop
+  description: Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+  package_manager: winget
+  package_name: Telegram.TelegramDesktop
+  category: Utilities
 
+- name: WhatsApp Desktop
+  description: WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform centralized messaging and voice-over-IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other content.
+  package_manager: winget
+  package_name: WhatsApp.WhatsApp
+  category: Utilities
+
+- name: Viber
+  description: Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
+  package_manager: winget
+  package_name: Viber.Viber
+  category: Utilities
+
+- name: Microsoft Teams
+  description: Make amazing things happen together at home, work, and school.
+  package_manager: winget
+  package_name: Microsoft.Teams
+  category: Utilities
+
+- name: Signal
+  description: Signal is an encrypted communications application. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos, and make one-to-one voice and video calls.
+  package_manager: winget
+  package_name: OpenWhisperSystems.Signal
+  category: Utilities
