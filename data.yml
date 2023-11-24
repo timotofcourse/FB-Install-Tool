@@ -194,50 +194,6 @@
   package_name: rpcs3
   category: Games
 
-# Comunication
-
-- name: Zoom
-  description: Zoom's secure, reliable video platform powers all of your communication needs, including meetings, chat, phone, webinars, and online events.
-  package_manager: winget
-  package_name: Zoom.Zoom
-  category: Games
-
-- name: Guilded
-  description: Guilded upgrades your group chat and equips your server with integrated event calendars, forums, and more 100% free.
-  package_manager: winget
-  package_name: Guilded.Guilded
-  category: Games
-
-- name: Slack
-  description: Slack is a collaboration hub for work, no matter what work you do. It's a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.
-  package_manager: winget
-  package_name: SlackTechnologies.Slack
-  category: Games
-
-- name: HexChat
-  description: HexChat is an open source, feature-rich, multi-network IRC client based on XChat. It offers a wide range of features, including Python/Perl scripting, spellcheck, proxies, SASL, DCC support. With an easy to use interface, it offers a great method of chatting online.
-  package_manager: winget
-  package_name: hexchat
-  category: Games
-
-- name: skype
-  description: Skype - Install Skype, add your friends as contacts, then call, video call and instant message with them for free. Call people who aren"t on Skype too, at really low rates.
-  package_manager: winget
-  package_name: Microsoft.Skype
-  category: Games
-
-- name: Discord
-  description: Whether you’re part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, Discord makes it easy to talk every day and hang out more often.
-  package_manager: winget
-  package_name: Discord.Discord
-  category: Games
-
-- name: TeamSpeak3
-  description: Use crystal clear sound to communicate with your team mates cross-platform with military-grade security, lag-free performance & unparalleled reliability and uptime.
-  package_manager: winget
-  package_name: TeamSpeakSystems.TeamSpeakClient
-  category: Games
-
 # Office
 
 - name: SumatraPDF
@@ -577,7 +533,6 @@
   package_name: DuongDieuPhap.ImageGlass
   category: Media
 
-
 # Utilities
 
 - name: WinZip
@@ -700,32 +655,76 @@
   package_name: AdGuard.AdGuard
   category: Utilities
 
+# Communications
+
 - name: Telegram Desktop
   description: Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
   package_manager: winget
   package_name: Telegram.TelegramDesktop
-  category: Utilities
+  category: Communications
 
 - name: WhatsApp Desktop
   description: WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform centralized messaging and voice-over-IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other content.
   package_manager: winget
   package_name: WhatsApp.WhatsApp
-  category: Utilities
+  category: Communications
 
 - name: Viber
   description: Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
   package_manager: winget
   package_name: Viber.Viber
-  category: Utilities
+  category: Communications
 
 - name: Microsoft Teams
   description: Make amazing things happen together at home, work, and school.
   package_manager: winget
   package_name: Microsoft.Teams
-  category: Utilities
+  category: Communications
 
 - name: Signal
   description: Signal is an encrypted communications application. It uses the Internet to send one-to-one and group messages, which can include files, voice notes, images and videos, and make one-to-one voice and video calls.
   package_manager: winget
   package_name: OpenWhisperSystems.Signal
-  category: Utilities
+  category: Communications
+
+- name: Zoom
+  description: Zoom's secure, reliable video platform powers all of your communication needs, including meetings, chat, phone, webinars, and online events.
+  package_manager: winget
+  package_name: Zoom.Zoom
+  category: Communications
+
+- name: Guilded
+  description: Guilded upgrades your group chat and equips your server with integrated event calendars, forums, and more 100% free.
+  package_manager: winget
+  package_name: Guilded.Guilded
+  category: Communications
+
+- name: Slack
+  description: Slack is a collaboration hub for work, no matter what work you do. It's a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.
+  package_manager: winget
+  package_name: SlackTechnologies.Slack
+  category: Communications
+
+- name: HexChat
+  description: HexChat is an open source, feature-rich, multi-network IRC client based on XChat. It offers a wide range of features, including Python/Perl scripting, spellcheck, proxies, SASL, DCC support. With an easy to use interface, it offers a great method of chatting online.
+  package_manager: winget
+  package_name: hexchat
+  category: Communications
+
+- name: skype
+  description: Skype - Install Skype, add your friends as contacts, then call, video call and instant message with them for free. Call people who aren"t on Skype too, at really low rates.
+  package_manager: winget
+  package_name: Microsoft.Skype
+  category: Communications
+
+- name: Discord
+  description: Whether you’re part of a school club, gaming group, worldwide art community, or just a handful of friends that want to spend time together, Discord makes it easy to talk every day and hang out more often.
+  package_manager: winget
+  package_name: Discord.Discord
+  category: Communications
+
+- name: TeamSpeak3
+  description: Use crystal clear sound to communicate with your team mates cross-platform with military-grade security, lag-free performance & unparalleled reliability and uptime.
+  package_manager: winget
+  package_name: TeamSpeakSystems.TeamSpeakClient
+  category: Communications
