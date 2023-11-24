@@ -3,4 +3,6 @@ deps:
 	pip install -r requirements.txt
 
 build:
-	pyinstaller --noconfirm --onefile --windowed --add-data "$env:LOCALAPPDATA\Programs\Python\Python311\Lib\site-packages\customtkinter;customtkinter/"  ".\install.py" --icon icon.ico
+	pyinstaller --noconfirm --onefile --windowed --collect-all customtkinter -w  ".\fb-install.py" --icon icon.ico
+	powershell.exe .\copy-additions.ps1
+	powershell.exe .\sign.ps1
