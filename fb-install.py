@@ -154,7 +154,7 @@ def install_selected_apps():
 
 # Set the frame to change the main frames
  
-left_frame = customtkinter.CTkFrame(window)
+left_frame = customtkinter.CTkFrame(window, fg_color=('green', 'dark_green'))
 left_frame.pack(side=tkinter.LEFT, fill=tkinter.Y)
 
 # Function to switch between categories
