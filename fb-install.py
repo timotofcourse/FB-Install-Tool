@@ -15,21 +15,21 @@ customtkinter.set_default_color_theme("blue")
 
 # Check if Windows version is equal to Windows 10 22h2 or later
 
-def is_admin():
+# def is_admin():
     
-    try:
+#     try:
 
-        return ctypes.windll.shell32.IsUserAnAdmin()
+#         return ctypes.windll.shell32.IsUserAnAdmin()
 
-    except:
+#     except:
 
-        tkinter.messagebox.showerror(title='Error', message='This tool needs to be run as Administrator')
-        return False
+#         tkinter.messagebox.showerror(title='Error', message='This tool needs to be run as Administrator')
+#         return False
     
-if not is_admin():
+# if not is_admin():
 
-    tkinter.messagebox.showerror(title='Error', message='This tool needs to be run as Administrator')
-    sys.exit(1)
+#     tkinter.messagebox.showerror(title='Error', message='This tool needs to be run as Administrator')
+#     sys.exit(1)
 
 def check_windows_version():
 
@@ -135,7 +135,7 @@ def install_selected_apps():
 
                 try:
 
-                    os.system(f'choco install {package_name} -y')
+                    os.system(f'sudo choco install {package_name} -y')
 
                 except Exception as e:
                    
