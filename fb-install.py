@@ -9,6 +9,7 @@ import shutil
 from ruamel.yaml import YAML
 import sys
 import ctypes
+import pywinstyles
 
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
@@ -221,6 +222,9 @@ category_frames[first_category].pack()
 
 install_button = customtkinter.CTkButton(left_frame, text="Install Selected Apps", command=install_selected_apps)
 install_button.pack(side=tkinter.BOTTOM, fill=tkinter.X)
+
+pywinstyles.apply_style(window, "optimised")
+pywinstyles.change_border_color(window, color="#00ffff")
 
 # Launch App
 
