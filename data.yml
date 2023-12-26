@@ -655,6 +655,12 @@
   package_name: AdGuard.AdGuard
   category: Utilities
 
+- name: Unchecky
+  description: Unchecky automatically unchecks unrelated offers, both saving you mouse clicks and making it less likely to miss a checkbox of an unwanted offer.
+  package_manager: winget
+  package_name: Unchecky.Unchecky
+  category: Utilities
+
 # Communications
 
 - name: Telegram Desktop
